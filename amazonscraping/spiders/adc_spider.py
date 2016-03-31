@@ -1,6 +1,6 @@
 import scrapy
 from amazonscraping.items import AmazonProduct
-from scrapy.selector import Selector
+# from scrapy.selector import Selector
 # from scrapy.http import Request
 # import json
 # import requests
@@ -17,40 +17,47 @@ class AmazonDataCollector(scrapy.Spider):
         '-Thermogenic-Licaps/dp/B00JHIOZQ6/'
     ]
 
+    def __init__(self, *args, **kwargs):
+        super(AmazonDataCollector, self).__init__(*args, **kwargs)
+        self.start_urls = [kwargs.get('url')]
+
     def parse(self, response):
-        filename = response.url.split("/")[-2] + '.html'
-        with open(filename, 'wb') as f:
-            f.write(response.body)
         item = AmazonProduct()
-        name = response.xpath(
-            "//span[@id='productTitle']/text()"
-        ).extract()[0].encode('utf-8')
-        price = response.xpath(
-            "//span[@id='priceblock_ourprice']/text()"
-        ).extract()[0].encode('utf-8')
-        rank_details = response.xpath(
-            "//li[@id='SalesRank']"
-        ).extract()[0]
-        print(rank_details, type(rank_details))
-        print(name, price)
+        try:
+            name = response.xpath(
+                "//span[@id='productTitle']/text()"
+            ).extract()[0].encode('utf-8')
+        except:
+            print('Error in processing name')
+            name = ''
+        try:
+            # price by amazon
+            price = response.xpath(
+                "//span[@id='priceblock_ourprice']/text()"
+            ).extract()[0].encode('utf-8')
+        except:
+            try:
+                # sale price
+                price = response.xpath(
+                    "//span[@id='priceblock_saleprice']/text()"
+                ).extract()[0].encode('utf-8')
+            except:
+                print('Error in processing price')
+                price = ''
+        try:
+            rank_details = response.xpath(
+                "//li[@id='SalesRank']/text()"
+            )[1].extract().strip()
+
+            rank = rank_details.split(' ')[0].replace('#', '').replace(',', '')
+            category = rank_details.split('in')[-1].replace('(', '').strip()
+        except:
+            print('Error in processing rank and category')
+            rank = ''
+            category = ''
+
         item['name'] = name
         item['price'] = price.replace('$', '')
-        item['rank'] = '1841'
-        item['category'] = 'Health & Personal Care'
-
-        body = """
-        <li id="itemId">
-            <b>Something in bold</b>
-            #Required data (
-            <a href="some_link">some link</a>
-            )
-            <ul>
-                <li>other data</li>
-                <li>other data</li>
-                <li>other data</li>
-            </ul>
-        </li>
-        """
-        data = Selector(text=body).xpath('//b/text()').extract()
-        print(data)
+        item['rank'] = rank
+        item['category'] = category
         return item
