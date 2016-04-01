@@ -61,9 +61,9 @@ NEWSPIDER_MODULE = 'amazonscraping.spiders'
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'amazonscraping.pipelines.SomePipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'amazonscraping.pipelines.AmazonscrapingPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
