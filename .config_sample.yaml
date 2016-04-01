@@ -1,0 +1,5 @@
+mysql:
+    host: 'HOST'
+    username: 'MYSQL-USERNAME'
+    password: 'MYSQL-PASSWORD'
+    db: 'DBNAME'

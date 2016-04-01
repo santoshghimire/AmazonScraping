@@ -5,16 +5,17 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import MySQLdb
+import yaml
 from scrapy import signals
 
 
 class AmazonscrapingPipeline(object):
 
     cnx = {
-        'host': "localhost",
-        'username': "root",
-        'password': "root",
-        'db': "amazonscraping"
+        'host': "",
+        'username': "",
+        'password': "",
+        'db': ""
     }
     db = None
     cursor = None
@@ -29,6 +30,16 @@ class AmazonscrapingPipeline(object):
     def spider_opened(self, spider):
         """ Connect to RDS MySQL database when spider is opened """
         print('** Spider opened, connecting to MySQLdb **')
+
+        # open config file for database credentials
+        with open(".config.yaml", 'r') as stream:
+            config = yaml.load(stream)
+            self.cnx['host'] = config['mysql']['host']
+            self.cnx['username'] = config['mysql']['username']
+            self.cnx['password'] = config['mysql']['password']
+            self.cnx['db'] = config['mysql']['db']
+
+        # connect mysql
         self.db = MySQLdb.connect(
             self.cnx['host'], self.cnx['username'],
             self.cnx['password'], self.cnx['db']
@@ -53,6 +64,7 @@ class AmazonscrapingPipeline(object):
         print('** Spider closed **')
 
     def process_item(self, item, spider):
+        """ Process the scraped item """
         # save the item to mysql
         print('** Saving item to MySQL **')
         self.cursor.execute(
