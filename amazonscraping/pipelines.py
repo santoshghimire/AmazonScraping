@@ -52,7 +52,10 @@ class AmazonscrapingPipeline(object):
         self.cursor.execute(
             """
             create table IF NOT EXISTS amzn_products (name varchar(1000),
-            price float, rank integer, category varchar(500));
+            price float, rank integer, category varchar(500),
+            url varchar(1000), shipping_weight varchar(100),
+            item_model_number varchar(200), badge_count integer,
+            amazon_seller varchar(10));
             """
         )
         self.cursor.execute("SET sql_notes = 1; ")
@@ -69,10 +72,17 @@ class AmazonscrapingPipeline(object):
         print('** Saving item to MySQL **')
         self.cursor.execute(
             """
-            insert into amzn_products (name,price, rank, category) values
-            (%s, %s, %s, %s);
+            insert into amzn_products (name, price, rank, category,
+            url, shipping_weight, item_model_number, badge_count,
+            amazon_seller) values
+            (%s, %s, %s, %s, %s, %s, %s, %s, %s);
             """,
-            (item['name'], item['price'], item['rank'], item['category'])
+            (
+                item['name'], item['price'], item['rank'], item['category'],
+                item['url'], item['shipping_weight'],
+                item['item_model_number'],
+                item['badge_count'], item['amazon_seller']
+            )
         )
         # Commit your changes in the database
         self.db.commit()
