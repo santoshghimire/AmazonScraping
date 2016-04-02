@@ -1,4 +1,6 @@
 import scrapy
+import urlparse
+
 from amazonscraping.items import AmazonProduct
 # from scrapy.selector import Selector
 # from scrapy.http import Request
@@ -55,6 +57,20 @@ class AmazonDataCollector(scrapy.Spider):
             print('Error in processing rank and category')
             rank = ''
             category = ''
+
+        # getting request url without querystring
+        url = response.request.url
+        parsed_url = urlparse.urljoin(url, urlparse.urlparse(url).path)
+
+        # getting shipping weight
+        shipping_wt_details = response.xpath(
+            "//li[@id='SalesRank']/../li/b[contains(text(),"
+            " 'Shipping Weight')]"
+        )
+        shipping_wt = shipping_wt_details.xpath('../text()')[0].extract()
+        shipping_wt = shipping_wt.replace('(', '').strip()
+        # print('Parsed URL:', parsed_url)
+        # print('shipping_wt:', shipping_wt)
 
         item['name'] = name
         item['price'] = price.replace('$', '')
