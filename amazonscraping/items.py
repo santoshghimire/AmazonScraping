@@ -19,3 +19,4 @@ class AmazonProduct(scrapy.Item):
     item_model_number = scrapy.Field()
     badge_count = scrapy.Field()
     amazon_seller = scrapy.Field()
+    asin = scrapy.Field()

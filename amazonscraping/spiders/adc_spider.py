@@ -123,9 +123,13 @@ class AmazonDataCollector(scrapy.Spider):
         item['item_model_number'] = item_model_number
 
         try:
+            product_id = ''
             other_sellers_link = "http://www.amazon.com/gp/offer-listing/"
             split_url = url.split('/')
             product_id = split_url[split_url.index('dp') + 1]
+
+            item['asin'] = product_id
+
             other_sellers_link += product_id
             request = Request(
                 other_sellers_link, callback=self.parse_other_sellers_page
@@ -135,6 +139,8 @@ class AmazonDataCollector(scrapy.Spider):
         except:
             item['badge_count'] = 0
             item['amazon_seller'] = 'No'
+            if not product_id:
+                item['asin'] = product_id
             return item
 
     def parse_other_sellers_page(self, response):

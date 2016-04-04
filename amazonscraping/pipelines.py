@@ -55,7 +55,7 @@ class AmazonscrapingPipeline(object):
                 price float, rank integer, category varchar(500),
                 url varchar(1000), shipping_weight varchar(100),
                 item_model_number varchar(200), badge_count integer,
-                amazon_seller varchar(10));
+                amazon_seller varchar(10), asin varchar(100));
                 """
             )
             self.cursor.execute("SET sql_notes = 1; ")
@@ -80,15 +80,16 @@ class AmazonscrapingPipeline(object):
                 """
                 insert into amzn_products (name, price, rank, category,
                 url, shipping_weight, item_model_number, badge_count,
-                amazon_seller) values
-                (%s, %s, %s, %s, %s, %s, %s, %s, %s);
+                amazon_seller, asin) values
+                (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
                 """,
                 (
                     item['name'], item['price'], item['rank'],
                     item['category'],
                     item['url'], item['shipping_weight'],
                     item['item_model_number'],
-                    item['badge_count'], item['amazon_seller']
+                    item['badge_count'], item['amazon_seller'],
+                    item['asin']
                 )
             )
             # Commit your changes in the database
