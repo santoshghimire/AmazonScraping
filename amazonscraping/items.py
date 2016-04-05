@@ -20,3 +20,11 @@ class AmazonProduct(scrapy.Item):
     badge_count = scrapy.Field()
     amazon_seller = scrapy.Field()
     asin = scrapy.Field()
+
+
+class BestSellerCategoryLink(scrapy.Item):
+    # define the fields for your item here like:
+    name = scrapy.Field()
+    url = scrapy.Field()
+    parent_category = scrapy.Field()
+    main_category = scrapy.Field()

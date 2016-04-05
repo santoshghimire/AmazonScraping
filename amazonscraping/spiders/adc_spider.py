@@ -1,8 +1,9 @@
 import scrapy
 import urlparse
+from scrapy.http import Request
 
 from amazonscraping.items import AmazonProduct
-from scrapy.http import Request
+from amazonscraping.pipelines import AmazonscrapingPipeline
 
 
 class AmazonDataCollector(scrapy.Spider):
@@ -15,6 +16,10 @@ class AmazonDataCollector(scrapy.Spider):
         'http://www.amazon.com/Performix-Suspension-Super' +
         '-Thermogenic-Licaps/dp/B00JHIOZQ6/'
     ]
+
+    pipeline = set([
+        AmazonscrapingPipeline
+    ])
 
     def __init__(self, *args, **kwargs):
         super(AmazonDataCollector, self).__init__(*args, **kwargs)

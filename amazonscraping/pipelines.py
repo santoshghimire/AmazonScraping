@@ -7,6 +7,7 @@
 import MySQLdb
 import yaml
 from scrapy import signals
+from .decorator import check_spider_pipeline, check_spider_connection
 
 
 class AmazonscrapingPipeline(object):
@@ -27,6 +28,7 @@ class AmazonscrapingPipeline(object):
         crawler.signals.connect(pipeline.spider_closed, signals.spider_closed)
         return pipeline
 
+    @check_spider_connection
     def spider_opened(self, spider):
         """ Connect to RDS MySQL database when spider is opened """
         print('** Spider opened, connecting to MySQLdb **')
@@ -63,6 +65,7 @@ class AmazonscrapingPipeline(object):
         except:
             print('Connection failed !!!')
 
+    @check_spider_connection
     def spider_closed(self, spider):
         # disconnect from server
         try:
@@ -71,6 +74,7 @@ class AmazonscrapingPipeline(object):
         except:
             print('** Spider closed. **')
 
+    @check_spider_pipeline
     def process_item(self, item, spider):
         """ Process the scraped item """
         try:
@@ -90,6 +94,99 @@ class AmazonscrapingPipeline(object):
                     item['item_model_number'],
                     item['badge_count'], item['amazon_seller'],
                     item['asin']
+                )
+            )
+            # Commit your changes in the database
+            self.db.commit()
+            print('Save successful...')
+        except:
+            print('Save failed !!!')
+        return item
+
+
+class BestSellerCategoryPipeline(object):
+
+    cnx = {
+        'host': "",
+        'username': "",
+        'password': "",
+        'db': ""
+    }
+    db = None
+    cursor = None
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        pipeline = cls()
+        crawler.signals.connect(pipeline.spider_opened, signals.spider_opened)
+        crawler.signals.connect(pipeline.spider_closed, signals.spider_closed)
+        return pipeline
+
+    @check_spider_connection
+    def spider_opened(self, spider):
+        """ Connect to RDS MySQL database when spider is opened """
+        print('** Spider opened, connecting to MySQLdb **')
+
+        # open config file for database credentials
+        with open(".config.yaml", 'r') as stream:
+            config = yaml.load(stream)
+            self.cnx['host'] = config['mysql']['host']
+            self.cnx['username'] = config['mysql']['username']
+            self.cnx['password'] = config['mysql']['password']
+            self.cnx['db'] = config['mysql']['db']
+        try:
+            # connect mysql
+            self.db = MySQLdb.connect(
+                self.cnx['host'], self.cnx['username'],
+                self.cnx['password'], self.cnx['db']
+            )
+
+            # prepare a cursor object using cursor() method
+            self.cursor = self.db.cursor()
+
+            self.cursor.execute("SET sql_notes = 0; ")
+            self.cursor.execute(
+                """
+                create table IF NOT EXISTS bestseller_categories
+                (
+                    name varchar(200),
+                    url varchar(500), parent_category varchar(200),
+                    main_category varchar(200)
+                );
+                """
+            )
+            self.cursor.execute("SET sql_notes = 1; ")
+            print('Connection successful...')
+        except:
+            print('Connection failed !!!')
+
+    @check_spider_connection
+    def spider_closed(self, spider):
+        # disconnect from server
+        try:
+            self.db.close()
+            print('** Spider closed, MySQL disconnected. **')
+        except:
+            print('** Spider closed. **')
+
+    @check_spider_pipeline
+    def process_item(self, item, spider):
+        """ Process the scraped item """
+        try:
+            # save the item to mysql
+            print('** Saving item to MySQL **')
+            self.cursor.execute(
+                """
+                insert into bestseller_categories (
+                    name, url, parent_category,
+                    main_category
+                ) values(
+                    %s, %s, %s, %s
+                );
+                """,
+                (
+                    item['name'], item['url'], item['parent_category'],
+                    item['main_category']
                 )
             )
             # Commit your changes in the database
