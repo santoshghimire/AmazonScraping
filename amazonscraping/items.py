@@ -9,7 +9,7 @@ import scrapy
 
 
 class AmazonProduct(scrapy.Item):
-    # define the fields for your item here like:
+    """Amazon product item"""
     name = scrapy.Field()
     price = scrapy.Field()
     rank = scrapy.Field()
@@ -23,8 +23,14 @@ class AmazonProduct(scrapy.Item):
 
 
 class BestSellerCategoryLink(scrapy.Item):
-    # define the fields for your item here like:
+    """Best Seller Category link item"""
     name = scrapy.Field()
     url = scrapy.Field()
     parent_category = scrapy.Field()
     main_category = scrapy.Field()
+
+
+class BestSellerItemLink(scrapy.Item):
+    """Best Seller Item on Amazon"""
+    product_url = scrapy.Field()
+    category_url = scrapy.Field()

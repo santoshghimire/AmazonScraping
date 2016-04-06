@@ -11,14 +11,17 @@ def check_spider_pipeline(process_item_method):
 
         # if class is in the spider's pipeline, then use the
         # process_item method normally.
-        if self.__class__ in spider.pipeline:
-            # spider.log(msg % 'executing', level=log.DEBUG)
-            return process_item_method(self, item, spider)
+        try:
+            if self.__class__ in spider.pipeline:
+                # spider.log(msg % 'executing', level=log.DEBUG)
+                return process_item_method(self, item, spider)
 
-        # otherwise, just return the untouched item (skip this step in
-        # the pipeline)
-        else:
-            # spider.log(msg % 'skipping', level=log.DEBUG)
+            # otherwise, just return the untouched item (skip this step in
+            # the pipeline)
+            else:
+                # spider.log(msg % 'skipping', level=log.DEBUG)
+                return item
+        except:
             return item
 
     return wrapper
@@ -34,14 +37,17 @@ def check_spider_connection(spider_connection_method):
 
         # if class is in the spider's pipeline, then use the
         # process_item method normally.
-        if self.__class__ in spider.pipeline:
-            # spider.log(msg % 'executing', level=log.DEBUG)
-            return spider_connection_method(self, spider)
+        try:
+            if self.__class__ in spider.pipeline:
+                # spider.log(msg % 'executing', level=log.DEBUG)
+                return spider_connection_method(self, spider)
 
-        # otherwise, just return the untouched item (skip this step in
-        # the pipeline)
-        else:
-            # spider.log(msg % 'skipping', level=log.DEBUG)
+            # otherwise, just return the untouched item (skip this step in
+            # the pipeline)
+            else:
+                # spider.log(msg % 'skipping', level=log.DEBUG)
+                return
+        except:
             return
 
     return wrapper

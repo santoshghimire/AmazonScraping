@@ -64,6 +64,7 @@ NEWSPIDER_MODULE = 'amazonscraping.spiders'
 ITEM_PIPELINES = {
    'amazonscraping.pipelines.AmazonscrapingPipeline': 300,
    'amazonscraping.pipelines.BestSellerCategoryPipeline': 500,
+   'amazonscraping.pipelines.BestSellerPipeline': 600,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
