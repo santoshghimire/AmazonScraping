@@ -1,8 +1,11 @@
 import scrapy
 import urlparse
 from scrapy.http import Request
+# from scrapy.xlib.pydispatch import dispatcher
+
 
 from amazonscraping.items import AmazonProduct
+from amazonscraping.get_product_url import GetProductURL
 from amazonscraping.pipelines import AmazonscrapingPipeline
 
 
@@ -12,10 +15,18 @@ class AmazonDataCollector(scrapy.Spider):
     """
     name = "adc"
     allowed_domains = ["amazon.com"]
-    start_urls = [
-        'http://www.amazon.com/Performix-Suspension-Super' +
-        '-Thermogenic-Licaps/dp/B00JHIOZQ6/'
-    ]
+    handle_httpstatus_list = [400, 404, 503]
+
+    url = GetProductURL()
+
+    start_urls = []
+
+    args = False
+
+    # start_urls = [
+    #     'http://www.amazon.com/Performix-Suspension-Super' +
+    #     '-Thermogenic-Licaps/dp/B00JHIOZQ6/'
+    # ]
 
     pipeline = set([
         AmazonscrapingPipeline
@@ -23,7 +34,30 @@ class AmazonDataCollector(scrapy.Spider):
 
     def __init__(self, *args, **kwargs):
         super(AmazonDataCollector, self).__init__(*args, **kwargs)
-        self.start_urls = [kwargs.get('url')]
+        if kwargs.get('url'):
+            self.start_urls = [kwargs.get('url')]
+            self.args = True
+
+    def start_requests(self):
+        """
+        NOTE: This method is ONLY CALLED ONCE by Scrapy (to kick things off).
+        Get the first url to crawl and return a Request object
+        This will be parsed to self.parse which will continue
+        the process of parsing all the other generated URLs
+        """
+        if not self.args:
+            # connect to mysql database
+            self.url.connect()
+
+            # grab the first URL to begin crawling
+            start_url = self.url.next_url().next()
+        else:
+            start_url = self.start_urls[0]
+
+        request = Request(start_url, dont_filter=True)
+
+        # important to yield, not return
+        yield request
 
     def parse(self, response):
         item = AmazonProduct()
@@ -116,8 +150,17 @@ class AmazonDataCollector(scrapy.Spider):
             )[0].extract()
             item_model_number = item_model_details.strip()
         except:
-            item_model_number = ''
-            pass
+            try:
+                item_model_details = response.xpath(
+                    "//li[@id='SalesRank']/../li/b[contains(text(),"
+                    " 'Item model number')]"
+                )
+                item_model_number = item_model_details.xpath(
+                    '../text()'
+                )[0].extract()
+                item_model_number = item_model_number.strip()
+            except:
+                item_model_number = ''
 
         item['name'] = name
         item['price'] = price
@@ -137,18 +180,37 @@ class AmazonDataCollector(scrapy.Spider):
 
             other_sellers_link += product_id
             request = Request(
-                other_sellers_link, callback=self.parse_other_sellers_page
+                other_sellers_link, callback=self.parse_other_sellers_page,
+                headers={
+                    'Host': 'www.amazon.com',
+                    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0)'
+                            'Gecko/20100101 Firefox/45.0',
+                    'Accept': 'text/html,application/xhtml+xml,application/'
+                            'xml;q=0.9,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.5',
+                    'Accept-Encoding': 'gzip, deflate',
+                    'Connection': 'keep-alive',
+                    'Pragma': 'no-cache',
+                    'Cache-Control': 'no-cache'
+                }
             )
             request.meta['item'] = item
-            return request
+            yield request
         except:
             item['badge_count'] = 0
-            item['amazon_seller'] = 'No'
+            item['amazon_seller'] = 'N/A'
             if not product_id:
                 item['asin'] = product_id
-            return item
+            yield item
+
+        # get the next URL to crawl
+        if not self.args:
+            next_url = self.url.next_url().next()
+            yield Request(next_url)
 
     def parse_other_sellers_page(self, response):
+        if response.status in self.handle_httpstatus_list:
+            self.crawler.stats.inc_value('failed_url_count')
         try:
             badge_elements = response.xpath(
                 "//div[@class='olpBadgeContainer']/div/span/"
@@ -159,6 +221,7 @@ class AmazonDataCollector(scrapy.Spider):
             print(
                 'Error in processing seller Fullfillment by Amazon badge count'
             )
+            badge_count = 0
         try:
             amazon_seller_element = response.xpath(
                 "//div[@class='a-column a-span2 olpSellerColumn']"
@@ -170,8 +233,20 @@ class AmazonDataCollector(scrapy.Spider):
                 amazon_seller = 'No'
         except:
             print('Error in processing amazon seller')
+            amazon_seller = 'N/A'
 
         item = response.meta['item']
         item['badge_count'] = badge_count
         item['amazon_seller'] = amazon_seller
-        return item
+        yield item
+
+    def process_exception(self, response, exception, spider):
+        ex_class = "%s.%s" % (
+            exception.__class__.__module__, exception.__class__.__name__
+        )
+        self.crawler.stats.inc_value(
+            'downloader/exception_count', spider=spider
+        )
+        self.crawler.stats.inc_value(
+            'downloader/exception_type_count/%s' % ex_class, spider=spider
+        )

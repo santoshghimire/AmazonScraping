@@ -1,0 +1,2306 @@
+2016-04-06 23:53:16 [scrapy] INFO: Scrapy 1.0.3 started (bot: amazonscraping)
+2016-04-06 23:53:16 [scrapy] INFO: Optional features available: ssl, http11, boto
+2016-04-06 23:53:16 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'amazonscraping.spiders', 'SPIDER_MODULES': ['amazonscraping.spiders'], 'BOT_NAME': 'amazonscraping'}
+2016-04-06 23:53:19 [scrapy] INFO: Enabled extensions: CloseSpider, TelnetConsole, LogStats, CoreStats, SpiderState
+2016-04-06 23:53:19 [boto] DEBUG: Using access key found in environment variable.
+2016-04-06 23:53:19 [boto] DEBUG: Using secret key found in environment variable.
+2016-04-06 23:53:20 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-04-06 23:53:20 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-04-06 23:53:20 [scrapy] INFO: Enabled item pipelines: AmazonscrapingPipeline, BestSellerCategoryPipeline, BestSellerPipeline
+2016-04-06 23:53:20 [scrapy] INFO: Spider opened
+2016-04-06 23:53:20 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-04-06 23:53:23 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-04-06 23:54:03 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances> (referer: None)
+2016-04-06 23:54:04 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/General-Electric-RPWFE-RPWF-Refrigerator/dp/B009PCI2JU'}
+2016-04-06 23:54:05 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/MWF-SmartWater-Compatible-Filter-Cartridge/dp/B00KJ07SEM'}
+2016-04-06 23:54:05 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Best-Refrigerator-Smartwater-Compatible-Cartridge/dp/B01BIDPHYQ'}
+2016-04-06 23:54:06 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Whirlpool-Replacement-KitchenAid-Jenn-Air-compatible/dp/B016JZUWRK'}
+2016-04-06 23:54:06 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Compatible-Refrigerator-MORE-Pure-Filters/dp/B00UIZLE48'}
+2016-04-06 23:54:07 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Frigidaire-ULTRAWF-Compatible-Water-Filter/dp/B012YPVRIM'}
+2016-04-06 23:54:08 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Danby-DBC120BLS-Beverage-Center-Stainless/dp/B002MPLYEW'}
+2016-04-06 23:54:08 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/WHS-65LB1-Compact-Reversible-Refrigerator-Freezer/dp/B00MVVI1FC'}
+2016-04-06 23:54:09 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Danby-Designer-Countertop-Microwave-Stainless/dp/B0055UBB4O'}
+2016-04-06 23:54:10 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/GE-MWF-SmartWater-Water-Filter/dp/B01BVX7BHO'}
+2016-04-06 23:54:10 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Replacement-Frigidaire-Refrigerator-Electrolux-PAULTRA/dp/B014I5PXZY'}
+2016-04-06 23:54:11 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/OnePurify-Replacement-Cartridge-Kenmore-Sentinel/dp/B00NQ9ZN9U'}
+2016-04-06 23:54:11 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Samsung-Counter-Microwave-Cubic-Stainless/dp/B00NXRHIO8'}
+2016-04-06 23:54:12 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/MWF-Replacement-Refrigerator-Pure-Line/dp/B00YV210RA'}
+2016-04-06 23:54:13 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Deflecto-Model-Premium-Unbreakable-Deflector/dp/B00009W3G7'}
+2016-04-06 23:54:13 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/WHS-65LW1-Compact-Reversible-Refrigerator-Freezer/dp/B00MVVI1Q6'}
+2016-04-06 23:54:14 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Kenmore-46-9690-Compatible-Water-Filter/dp/B00MM0V35W'}
+2016-04-06 23:54:15 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Broan-S97007696-Non-Ducted-Replacement-Filter/dp/B000VL060M'}
+2016-04-06 23:54:15 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Danby-Designer-Countertop-Microwave-Stainless/dp/B007V7G5TU'}
+2016-04-06 23:54:16 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Danby-cu-ft-Countertop-Microwave-White/dp/B0052G14E8'}
+2016-04-06 23:54:18 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances)
+2016-04-06 23:54:18 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts> (referer: http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances)
+2016-04-06 23:54:18 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances)
+2016-04-06 23:54:18 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances)
+2016-04-06 23:54:18 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances)
+2016-04-06 23:54:18 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances)
+2016-04-06 23:54:18 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/NEW-Replacement-Part-Frigidaire-134051200/dp/B001PAWUWK'}
+2016-04-06 23:54:18 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances)
+2016-04-06 23:54:18 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances)
+2016-04-06 23:54:18 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances)
+2016-04-06 23:54:19 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Heineken-BT06-BeerTender-Tubes-6-Pack/dp/B002XVWC7S'}
+2016-04-06 23:54:20 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Sargent-Art-22-7251-Colored-Assorted/dp/B0027PA1AU'}
+2016-04-06 23:54:20 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/LT700P-Replacement-Refrigerators-NewView-Filtration/dp/B00VVV0N2W'}
+2016-04-06 23:54:21 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Miele-Refrigerator-Replacement-Water-Filter/dp/B00327OYDW'}
+2016-04-06 23:54:22 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Magnet-Sign-Whether-Dishes-Dishwasher-Options/dp/B00GKNU8WQ'}
+2016-04-06 23:54:22 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/WHS-109F-Compact-Reversible-Upright-Freezer/dp/B00L7QVSXE'}
+2016-04-06 23:54:23 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Bismi-Portable-Washing-Capacity-Garments/dp/B018H7ZUQ6'}
+2016-04-06 23:54:23 [scrapy] INFO: Crawled 10 pages (at 10 pages/min), scraped 28 items (at 28 items/min)
+2016-04-06 23:54:23 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Dearm-home%C2%AE-Picture-Removable-Stickers-Include/dp/B00W0YUCGG'}
+2016-04-06 23:54:24 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/SPT-SD-2201S-Countertop-Dishwasher-Silver/dp/B004N4MSPO'}
+2016-04-06 23:54:25 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Coorstek-Ignitor-replacement-WB13K21-Electric/dp/B00LU3WLK8'}
+2016-04-06 23:54:25 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/3-pack-Replacement-Cartridge-Kenmore-Sentinel/dp/B019S5SG58'}
+2016-04-06 23:54:26 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/PACK-3392519-Whirlpool-KitchenAid-Thermofuse/dp/B00MZH0OPC'}
+2016-04-06 23:54:27 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Avanti-RA7316PST-Apartment-Refrigerator-Platinum/dp/B00D1SZNO6'}
+2016-04-06 23:54:27 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Danby-Designer-DAR026A1BDD-Refrigerator-2-6-Cubic/dp/B00MO6V96W'}
+2016-04-06 23:54:28 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Maytag-UKF8001-Compatible-Water-Filter/dp/B00KV0SKQK'}
+2016-04-06 23:54:28 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Silhouette-SILH-BLADE-3-3T-Replacement-Blade/dp/B005S2O61E'}
+2016-04-06 23:54:29 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Certified-Appliance-90-1028-3-wire-Dryer/dp/B00C7MWQS8'}
+2016-04-06 23:54:30 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Maytag-Dryer-Lint-Filter-Screen/dp/B0051SUKRY'}
+2016-04-06 23:54:30 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/OnePurify-Replacement-Cartridge-Kenmore-Sentinel/dp/B00MNV804C'}
+2016-04-06 23:54:31 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/EasyGoProducts-Hand-Powered-Clothes-Washing/dp/B00YQCOCAM'}
+2016-04-06 23:54:32 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/DA29-00003G-Refrigerator-MORE-Pure-Filters/dp/B01CC3CT4M'}
+2016-04-06 23:54:32 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/InterDesign-Refrigerator-Freezer-Storage-Organizer/dp/B003E1W9G0'}
+2016-04-06 23:54:33 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/SmartWater-Compatible-Refrigerator-Water-Filter/dp/B010OW7YS4'}
+2016-04-06 23:54:33 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/72-color-Raffine-Marco-Coloring-Included/dp/B018I8T68W'}
+2016-04-06 23:54:34 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Miles-Kimball-Gap-Cap-Stoves/dp/B00GIR6PBM'}
+2016-04-06 23:54:35 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Panda-Compact-Portable-Washing-Capacity/dp/B00AW04ZMM'}
+2016-04-06 23:54:35 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Compactor-Bags-Pre-Cuffed-Pack/dp/B00W27J16S'}
+2016-04-06 23:54:36 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/ZVac-Flexible-Crevice-Vacuum-Hoses/dp/B0017PHQ6S'}
+2016-04-06 23:54:37 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/8565582-WHIRLPOOL-KITCHENAID-Priority-Available/dp/B00I3K15O4'}
+2016-04-06 23:54:37 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Cricut-2001974-Adhesive-Cutting-Standard/dp/B00BSK750Y'}
+2016-04-06 23:54:38 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Danby-DAR017A2BDD-Compact-Refrigerator-Cubic/dp/B00O2N3JDG'}
+2016-04-06 23:54:39 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Danby-cu-ft-Countertop-Microwave-Black/dp/B004ZU09QQ'}
+2016-04-06 23:54:39 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/GE-JVM3160RFSS-Stainless-Range-Microwave/dp/B00F2QFX5O'}
+2016-04-06 23:54:40 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Danby-DMW7700BLDB-0-7-Microwave-Oven/dp/B004ZUWBVW'}
+2016-04-06 23:54:40 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Sakura-30062-6-Piece-Pigma-Micron/dp/B0008G8G8Y'}
+2016-04-06 23:54:41 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Indoor-Lint-Trap-Filter-LTF0001/dp/B008RNPOIU'}
+2016-04-06 23:54:42 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Danby-DAR044A5BSLDD-Compact-Refrigerator-Spotless/dp/B00O2MB7BS'}
+2016-04-06 23:54:42 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Danby-DCR032C1BSLDD-Compact-Refrigerator-Spotless/dp/B00O2N4MEG'}
+2016-04-06 23:54:43 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Kenmore-46-9990-Kenmoreclear-Refrigerator-Filter/dp/B006JSARKU'}
+2016-04-06 23:54:43 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Strathmore-Series-400-Sketch-Pads/dp/B0027A39PY'}
+2016-04-06 23:54:44 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/SHARP-SMD2470AS-Microwave-Drawer-Stainless/dp/B00U6YFOZ6'}
+2016-04-06 23:54:45 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Washing-Machine-Traps-Aluminum-Clamps/dp/B003XEF7DK'}
+2016-04-06 23:54:45 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/promotions-RFC1200A-Refrigerator-Compatible-ADQ36006101/dp/B016PYUW3E'}
+2016-04-06 23:54:46 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/WHS-160RSS1-Compact-Reversible-Refrigerator-Stainless/dp/B00MWXS74O'}
+2016-04-06 23:54:47 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/LolliZ-Gel-Pens-Pen-Tray/dp/B00CRQL8OW'}
+2016-04-06 23:54:47 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/DA29-00003G-DA29-00003B-DA29-00003F-DA29-00003A-EFW-DA2903/dp/B00ASVHRSY'}
+2016-04-06 23:54:48 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Portable-AB-ICE26S-Silver-Avalon-Bay/dp/B00IY7BNUW'}
+2016-04-06 23:54:49 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Frigidaire-PureSource2-Compatible-Replacement-Bristi/dp/B0170CPE10'}
+2016-04-06 23:54:49 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/WLF-01-Replacement-filter-LT700P-ADQ36006101/dp/B00NMLGQJI'}
+2016-04-06 23:54:50 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Prismacolor-Premier-Colored-Assorted-3597T/dp/B00006IEEU'}
+2016-04-06 23:54:50 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Danby-DDW611WLED-Countertop-Dishwasher-White/dp/B0052FXC9Y'}
+2016-04-06 23:54:51 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Heating-Element-279838-Whirlpool-Kenmore/dp/B001DHLGOS'}
+2016-04-06 23:54:52 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/WHS-65LSS1-Compact-Reversible-Refrigerator-Stainless/dp/B00MMRFNNS'}
+2016-04-06 23:54:52 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/3387134-3392519-CYCLING-THERMOSTAT-Whirlpool/dp/B00VIGI5B6'}
+2016-04-06 23:54:53 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/IZO-All-Supply-Stuffer-Hypo-allergenic/dp/B010RZCNJS'}
+2016-04-06 23:54:54 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Whirlpool-4396841-4396710P-W10186667-Compatible/dp/B014WMJFG6'}
+2016-04-06 23:54:54 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Washing-Machine-Aluminum-Mesh-Clamps/dp/B005M393OO'}
+2016-04-06 23:54:55 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Giantex-Portable-Compact-Washing-Machine/dp/B01ALBMIEI'}
+2016-04-06 23:54:55 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/WHD-113FB1-Compact-Reversible-Refrigerator-Freezer/dp/B00MVVIMFG'}
+2016-04-06 23:54:56 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Silhouette-Cameo-Replacement-Cutting-Mat/dp/B005VPVW3I'}
+2016-04-06 23:54:57 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Koolatron-KWC-4-Coca-Cola-Personal-Fridge/dp/B000JLNBW4'}
+2016-04-06 23:54:57 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Aftermarket-Replacement-W10350376-Whirlpool-Dishwasher/dp/B0123NUKVA'}
+2016-04-06 23:54:58 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/DC96-00887A-NEW-THERMAL-CUT-FUSE/dp/B00M4JCJD6'}
+2016-04-06 23:54:59 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Avanti-Bottle-Thermoelectric-Counter-Cooler/dp/B004SUXZ5U'}
+** Spider opened, connecting to MySQLdb **
+Connection successful...
+Connecting MySQLdb...
+Connection successful...
+Fetching bestseller categories urls...
+ok
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Sa2016-04-06 23:54:59 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Bondic-Anything-Waterproof-Resistant-Plastic/dp/B00QU5M4MG'}
+2016-04-06 23:55:00 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Replacement-Samsung-RS261MDRS-Refrigerator-Filter/dp/B01B73GY26'}
+2016-04-06 23:55:00 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Panasonic-Countertop-Microwave-Technology-Refurbished/dp/B01453YU4E'}
+2016-04-06 23:55:01 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Danby-Designer-DCR044A2BDD-Refrigerator-4-4-Cubic/dp/B00MO6V9CQ'}
+2016-04-06 23:55:02 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Danby-DCF038A1WDB1-Chest-Freezer-Cubic/dp/B00O2N4GRE'}
+2016-04-06 23:55:02 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Podge-CS11302-Original-16-Ounce-Finish/dp/B001IKES5O'}
+2016-04-06 23:55:03 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Whirlpool-WMC20005YB-Black-Countertop-Microwave/dp/B005GSZB3M'}
+2016-04-06 23:55:04 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/GE-JVM7195SFSS-Range-Microwave-Stainless/dp/B00ENOTM94'}
+2016-04-06 23:55:04 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/LG-Goldstar-Microwave-Glass-Turntable/dp/B008SD4QU6'}
+2016-04-06 23:55:05 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Portable-Compact-Washer-Apartment-Spinning/dp/B01C6AASW6'}
+2016-04-06 23:55:05 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Women-Metal-Pendant-Charming-Necklace/dp/B010EY1Y2E'}
+2016-04-06 23:55:06 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Danby-DMW111KWDB-Microwave-Watts-White/dp/B0052G51AQ'}
+2016-04-06 23:55:07 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Spark-Innovators-Lint-Lizard-Attachment/dp/B00CAO3ZMO'}
+2016-04-06 23:55:07 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Danby-Bottle-Freestanding-Wine-Cooler/dp/B007PKOMWU'}
+2016-04-06 23:55:08 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Whirlpool-Surface-Element-9761345-8053268/dp/B002ZNNE12'}
+2016-04-06 23:55:09 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Chalk-Markers-Reversible-Chalkboards-Whiteboards/dp/B014BP31GO'}
+2016-04-06 23:55:09 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Viking-Rubber-Bumper-Package-PD040035/dp/B0064FCQUM'}
+2016-04-06 23:55:10 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Professional-Commercial-Machine-Cleaner-Whirlpool/dp/B00D0SHKQQ'}
+2016-04-06 23:55:10 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/WHS-87LB1-Compact-Reversible-Refrigerator-Freezer/dp/B00MVVI1B6'}
+2016-04-06 23:55:11 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Whirlpool-4396510-Compatible-Water-Filter/dp/B011A4AIFQ'}
+2016-04-06 23:55:12 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Pro-18-Piece-Sketch-Draw-Pencil/dp/B000HTBBO8'}
+2016-04-06 23:55:12 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Universal-White-Dishwasher-Cover-Repair/dp/B00NK0PUQG'}
+2016-04-06 23:55:13 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Icepure-RFC2000A-Refrigerator-Compatible-Whirlpool/dp/B016Q33Y0M'}
+2016-04-06 23:55:14 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Resistant-downloadable-Protection-accessories-protectors/dp/B00VT4FKNS'}
+2016-04-06 23:55:14 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/OnePurify-Replacement-Cartridge-Sentinel-Hotpoint/dp/B00K1LRDXK'}
+2016-04-06 23:55:15 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/CCbetter%C2%AE-Temperature-Melting-Flexible-Projects/dp/B01178RVI2'}
+2016-04-06 23:55:15 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Swash-80240515-Pods-Recharge-Green/dp/B00NQMGNUK'}
+2016-04-06 23:55:16 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/WHT-DRYER-VENT-WIDE-MOUTH/dp/B00314WY0G'}
+2016-04-06 23:55:17 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/Stark-Electric-Portable-Compact-Washing/dp/B00HZRJVCO'}
+2016-04-06 23:55:17 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/The-Laundry-Alternative-Wonderwash-Non-electric/dp/B002C8HR9A'}
+2016-04-06 23:55:18 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Clover-806-Shiro-Tape-Measure/dp/B000YZAO2K'}
+2016-04-06 23:55:19 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/NewAir-AW-181E-Bottle-Thermoelectric-Stainless/dp/B002ZWR194'}
+2016-04-06 23:55:19 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances',
+ 'product_url': u'http://www.amazon.com/WLF-01-ADQ36006101-S-ADQ36006101S-ADQ36006102-S-ADQ36006102S/dp/B00NMLFRXY'}
+2016-04-06 23:55:20 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/RinGuard-Ring-Size-Adjuster-Sizes/dp/B00PI0T25Q'}
+2016-04-06 23:55:20 [scrapy] INFO: Crawled 10 pages (at 0 pages/min), scraped 119 items (at 91 items/min)
+2016-04-06 23:55:20 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Art-Alternatives-Paint-Palette-Wells/dp/B0028FO1BO'}
+2016-04-06 23:55:21 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts)
+2016-04-06 23:55:21 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts)
+2016-04-06 23:55:21 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts)
+2016-04-06 23:55:22 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/HOSL-6-cavity-Rectangle-Silicone-Homemade/dp/B00QUIGT9C'}
+2016-04-06 23:55:22 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive> (referer: http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts)
+2016-04-06 23:55:22 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts)
+2016-04-06 23:55:22 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts)
+2016-04-06 23:55:22 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts)
+2016-04-06 23:55:22 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts)
+2016-04-06 23:55:22 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts)
+2016-04-06 23:55:22 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Beadaholique-Count-Resealable-Zipper-2-Inch/dp/B00AFRWKO2'}
+2016-04-06 23:55:23 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Fiskars-Contour-Rotary-Cutter-195210-1001/dp/B000B7M8WU'}
+2016-04-06 23:55:24 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Darice-120-Piece-Deluxe-Art-Set/dp/B002PNV6YE'}
+2016-04-06 23:55:24 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Smart-Color-Art-Sketching-Creations/dp/B018PIF25G'}
+2016-04-06 23:55:25 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Sakura-XNCW-24N-Assorted-Watercolors-Sketch/dp/B001OVG40E'}
+2016-04-06 23:55:26 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Darice-5-Piece-Painting-Knife-Set/dp/B004669XQ6'}
+2016-04-06 23:55:26 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Michelin-8526-Stealth-Windshield-Technology/dp/B00DYSDSJU'}
+2016-04-06 23:55:27 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Solabela%C2%AE-Montreal-Artist-Canvas-Roll-up/dp/B017J8748G'}
+2016-04-06 23:55:27 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Cricut-Tools-Craft-Basic-Set/dp/B00EZUCUUE'}
+2016-04-06 23:55:28 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Piece-Pen-Set-Multicolor-Pens/dp/B012EF9S9C'}
+2016-04-06 23:55:29 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Pre-Sharpened-Sturdier-Artist-Grade-Non-Toxic-Pluqis/dp/B013JKUBLK'}
+2016-04-06 23:55:29 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Brother-Feature-Rich-Built-In-Auto-Size-Buttonholes/dp/B000JQM1DE'}
+2016-04-06 23:55:30 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Huhuhero-Organizer-Students-Hobbyist-Included/dp/B018K3SXNE'}
+2016-04-06 23:55:31 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/VELCRO-Sticky-Back-Strips-Black/dp/B000TGSPV6'}
+2016-04-06 23:55:31 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Michelin-8522-Stealth-Windshield-Technology/dp/B00DYSDSAY'}
+2016-04-06 23:55:32 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/The-Candlemakers-Store-Natural-Soy/dp/B00WZ6N1QW'}
+2016-04-06 23:55:32 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/WooCrafts-Canvas-Colored-Pencils-Multi-purpose/dp/B016DS4QUW'}
+2016-04-06 23:55:33 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Canson-Universal-Sketch-Paper-Pad/dp/B000A7JJF0'}
+2016-04-06 23:55:34 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Angel-Crafts-Transfer-Paper-Tape/dp/B00R3NITS2'}
+2016-04-06 23:55:34 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Singer-00218-60-Inch-Tape-Measure/dp/B000B7Q9FM'}
+2016-04-06 23:55:35 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Michelin-8524-Stealth-Windshield-Technology/dp/B00DYSDS72'}
+2016-04-06 23:55:36 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Canson-Watercolor-30-Sheet-12-Inch-X-Large/dp/B004M59O4C'}
+2016-04-06 23:55:36 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Permanent-Adhesive-Backed-Vinyl-Cutters-Punches/dp/B00NQNQL7O'}
+2016-04-06 23:55:37 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Tombow-Permanent-Adhesive-Refills-62207/dp/B002UCPBVY'}
+2016-04-06 23:55:37 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Cornell-1021253-Woodsies-Jumbo-Sticks/dp/B00380E7RQ'}
+2016-04-06 23:55:38 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Heartybay-10Pieces-Round-Pointed-Nylon/dp/B00V4EG6D6'}
+2016-04-06 23:55:39 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Drop-Stop-Original-Patented-Filler/dp/B00BYH6C1E'}
+2016-04-06 23:55:39 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/TULIP-28976-Writers-Marker-20-Pack/dp/B005K0T4WK'}
+2016-04-06 23:55:40 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Aokbean-Mixed-Skeleton-Antique-Bronze/dp/B00GA97ERW'}
+2016-04-06 23:55:41 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Fiskars-Gel-Pen-48-Piece-Value/dp/B000S161FO'}
+2016-04-06 23:55:41 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Canson-9-Inch-12-Inch-Universal-100-Sheet/dp/B004IXJ7CM'}
+2016-04-06 23:55:42 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Michelin-8519-Stealth-Windshield-Technology/dp/B00DYSDHI2'}
+2016-04-06 23:55:42 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Magnum-Magnetics-Corporation-ProMAG-Ceramic-Magnets/dp/B00WHSLRQE'}
+2016-04-06 23:55:43 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Techni-Edge-11-Hobby-Blades/dp/B0006GBSXG'}
+2016-04-06 23:55:44 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Sowder-Ostrich-Feathers-12-14inch-Decoration/dp/B00SRK0K3C'}
+2016-04-06 23:55:44 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Gingher-8-Inch-Knife-Dressmakers-Shears/dp/B000UU6SR4'}
+2016-04-06 23:55:45 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Michelin-8520-Stealth-Windshield-Technology/dp/B00DYSDHFA'}
+2016-04-06 23:55:46 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Cornell-842-25-Piece-Brush-1-Inch/dp/B000W5IACS'}
+2016-04-06 23:55:46 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Martha-Stewart-Gift-White-Eyelet/dp/B0045HPFMC'}
+2016-04-06 23:55:47 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Vinyl-Ease-Permanent-Adhesive-Assorted/dp/B00331S0GO'}
+2016-04-06 23:55:47 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Cricut-2002363-Vinyl-Transfer-Tape/dp/B00LJV1KYO'}
+2016-04-06 23:55:48 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Meguiars-X2020-Supreme-Microfiber-Towels/dp/B0009IQZH0'}
+2016-04-06 23:55:49 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Brother-XL2600I-Affordable-25-Stitch-Free-Arm/dp/B000F7DPEQ'}
+2016-04-06 23:55:49 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Sargent-Art-22-7224-24-Count-Assorted/dp/B001DKMZ3G'}
+2016-04-06 23:55:50 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/E6000%C2%AE-Craft-Adhesive-3-7-oz/dp/B007TSYNG8'}
+2016-04-06 23:55:51 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Sakura-37488-3-Piece-Blister-Medium/dp/B0077RHJSK'}
+2016-04-06 23:55:51 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Michelin-8518-Stealth-Windshield-Technology/dp/B00DYSDHCI'}
+2016-04-06 23:55:52 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Beadaholique-Rubber-Bullet-Earring-Backs/dp/B009LIOEHM'}
+2016-04-06 23:55:52 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Beadaholique-4-Inch-Resealable-Zipper-Shipping/dp/B009LIOOPO'}
+2016-04-06 23:55:53 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Silhouette-MEDIA-TATTOO-Temporary-Tattoo-Paper/dp/B0043WJ3OA'}
+2016-04-06 23:55:54 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Speedball-2-Ounce-India-Super-Black/dp/B0007ZJ8TM'}
+2016-04-06 23:55:54 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Camco-40043-TastePURE-Flexible-Protector/dp/B0006IX87S'}
+2016-04-06 23:55:55 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Plaid-Promoabi-Barrel-Acrylic-2-Ounce/dp/B00ATJSD8I'}
+ve successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save2016-04-06 23:55:56 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Podge-CS11202-Original-16-Ounce-Finish/dp/B00178QQJ8'}
+2016-04-06 23:55:56 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Testors-Promotional-Enamel-Paint-Set/dp/B00005C2KF'}
+2016-04-06 23:55:57 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Royal-Langnickel-Essentials-Sketching-21-Piece/dp/B003DQLFPW'}
+2016-04-06 23:55:58 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Car-Sun-Shade-Side-Window/dp/B0104OFF7E'}
+2016-04-06 23:55:58 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Perler-Beads-000-Count-Bucket-Multi/dp/B0000AW5SU'}
+2016-04-06 23:55:59 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/4423-Extra-High-Machine-Stainless-Bedplate/dp/B003VWXZQ0'}
+2016-04-06 23:55:59 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Darice-80-Piece-Deluxe-Art-Set/dp/B002NZJ4L6'}
+2016-04-06 23:56:00 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Colore-Electric-Pencil-Sharpener-Function/dp/B0194EVFL0'}
+2016-04-06 23:56:01 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/BAFX-Products-34t5-Bluetooth-Android/dp/B005NLQAHS'}
+2016-04-06 23:56:01 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/BSN-43575-Transparent-1000-Inch-12-Pack/dp/B004PT3FOK'}
+2016-04-06 23:56:02 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Brother-1034D-Thread-Threading-Differential/dp/B0000CBK1L'}
+2016-04-06 23:56:03 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Sewing-Machine-Professional-Handheld-Accessories/dp/B01CPSRRFK'}
+2016-04-06 23:56:03 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/611-BR-Universal-Carrying-Free-Arm-Machines/dp/B000WOM50W'}
+2016-04-06 23:56:04 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Diageng-Black-Seamless-Skull-BUFF-Thin/dp/B00H5XNWJG'}
+2016-04-06 23:56:04 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Emoji-Sticker-Stickers-POPULAR-EMOJIS/dp/B00VS4MU8M'}
+2016-04-06 23:56:05 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Fiskars-Softgrip-Scissors-Stainless-01-004761J/dp/B002YIP97K'}
+2016-04-06 23:56:06 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Beadaholique-H20-1415FN-100-PieceSilverPlatedSurgicalSteelEarringHooks-Hypo-Allergenic/dp/B009LIOFWQ'}
+2016-04-06 23:56:06 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Acrylic-Paint-Set-Professional-MyArtscape/dp/B00X3O70B2'}
+2016-04-06 23:56:07 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/AmazonBasics-Microfiber-Cleaning-Cloth-Pack/dp/B009FUF6DM'}
+2016-04-06 23:56:08 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Second-Fix-Liquid-Plastic-Welding/dp/B016MB0JF6'}
+2016-04-06 23:56:08 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Liberty-Premium-Quality-Assorted-CC-912YS/dp/B01BC3UOHM'}
+2016-04-06 23:56:09 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/CraftyCroc-CC1-100-Markers-Reversible-Assorted/dp/B00MI8OX3C'}
+2016-04-06 23:56:09 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/144-Piece-Earring-Safety-Backs-Earrings/dp/B00BBQCQFY'}
+2016-04-06 23:56:10 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Allen-Sports-Deluxe-2-Bike-Trunk/dp/B00TRTSAZM'}
+2016-04-06 23:56:11 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Niutop-72-color-Premier-Colored-Coloring/dp/B01532TSCA'}
+2016-04-06 23:56:11 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Darice-9-Inch-by-12-Inch-Tracing-Paper-100-Sheets/dp/B004GXBXSK'}
+2016-04-06 23:56:12 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Beadaholique-Count-Resealable-Zipper-3-Inch/dp/B00AFRWKRO'}
+2016-04-06 23:56:13 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Dritz-9070-Upholstery-4-Inch-30-Pack/dp/B002LN9TS8'}
+2016-04-06 23:56:13 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Zwipes-Microfiber-Cleaning-36-Pack-Assorted/dp/B000XECJES'}
+2016-04-06 23:56:14 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Grandmas-Secret-Spot-Remover-2-Ounce/dp/B0021JD2S0'}
+2016-04-06 23:56:14 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Ella-Bella-Photography-Backdrop-12-feet/dp/B00AZN4KLW'}
+2016-04-06 23:56:15 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Snazaroo-Face-Paint-Ultimate-Party/dp/B00026ZEDK'}
+2016-04-06 23:56:16 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Protector-Gorilla-Hardness-Thickness-Complete/dp/B01AN84WAM'}
+2016-04-06 23:56:16 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Mobil-Advanced-Synthetic-Motor-4-73L/dp/B00J00X5YO'}
+2016-04-06 23:56:17 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Dritz-638-Deluxe-Seam-Ripper/dp/B0001DSIVY'}
+2016-04-06 23:56:18 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/HIGHEST-QUALITY-SEWING-Travel-Emergency/dp/B00CQR6C3O'}
+2016-04-06 23:56:18 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Brother-5300-Universal-Machine-Carrying/dp/B0002KHBS2'}
+2016-04-06 23:56:19 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/LIHAO-Aluminum-Crochet-Knitting-Needles/dp/B00QF75NF4'}
+2016-04-06 23:56:19 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Nilight-Driving-Mounting-Bracket-Warranty/dp/B00G620ZVU'}
+2016-04-06 23:56:20 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Art-Wall-2506-126-100-Piece-Assorted/dp/B00FF93ZF8'}
+2016-04-06 23:56:21 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Dutch-Glow-Cleaning-Tonic-Purpose/dp/B01AMXD2H2'}
+2016-04-06 23:56:21 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Sakura-30067-8-Piece-Micron-Graphic/dp/B004QHI43S'}
+2016-04-06 23:56:22 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts',
+ 'product_url': u'http://www.amazon.com/Outop-Watercolor-Acrylic-Painting-Supplies/dp/B00PXMYA1A'}
+2016-04-06 23:56:23 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Diageng-Random-Styles-Vinyl-Stickers/dp/B00UKZD3RM'}
+2016-04-06 23:56:23 [scrapy] INFO: Crawled 19 pages (at 9 pages/min), scraped 218 items (at 99 items/min)
+2016-04-06 23:56:23 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Leather-Honey-Conditioner-Furniture-Accessories/dp/B003IS3HV0'}
+2016-04-06 23:56:24 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Michelin-8521-Stealth-Windshield-Technology/dp/B00DYSDS54'}
+2016-04-06 23:56:24 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive)
+2016-04-06 23:56:24 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive)
+2016-04-06 23:56:25 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Keeper-06052-Mini-Bungee-Cord/dp/B00EC2CG9U'}
+2016-04-06 23:56:25 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive)
+2016-04-06 23:56:25 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive)
+2016-04-06 23:56:25 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive)
+2016-04-06 23:56:25 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive)
+2016-04-06 23:56:25 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive)
+2016-04-06 23:56:25 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive)
+2016-04-06 23:56:26 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Accutire-MS-4021B-Digital-Pressure-Gauge/dp/B00080QHMM'}
+2016-04-06 23:56:26 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/SHANREN-waterproof-Off-road-Auxiliary-Driving/dp/B00T1YADSU'}
+2016-04-06 23:56:27 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Tri-Lynx-00015-Lynx-Levelers-Pack/dp/B0028PJ10K'}
+2016-04-06 23:56:28 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Camco-22783-TastePURE-Drinking-Water/dp/B004ME11FS'}
+2016-04-06 23:56:28 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Battery-Tender-081-0069-6-Terminal-Disconnect/dp/B000NCOKZQ'}
+2016-04-06 23:56:29 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Motorcycle-Riding-Glasses-Smoke-Yellow/dp/B002UJVNFA'}
+2016-04-06 23:56:30 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/No-1-Windshield-Shade-Products-Included/dp/B00GSAUHB8'}
+2016-04-06 23:56:30 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Oxgord-Scanner-Engine-Diagnostics-Direct/dp/B011Q18D14'}
+2016-04-06 23:56:31 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Meguiars-X2000-Magnet-Microfiber-Drying/dp/B0009IQZFM'}
+2016-04-06 23:56:32 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Fit-System-C0400-Passenger-Adjustable/dp/B001DKT0DO'}
+2016-04-06 23:56:33 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Master-Lock-2866DATSC-Swivel-Receiver/dp/B0009V1WS4'}
+2016-04-06 23:56:33 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/RoadPro-RP-203EC-Extension-Cigarette-Lighter/dp/B000Z0HVHA'}
+2016-04-06 23:56:34 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Zwipes-Microfiber-Cleaning-Cloths-24-Pack/dp/B00ANZHG7C'}
+2016-04-06 23:56:35 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Sea-Foam-SF-16-Motor-Treatment/dp/B0002JN2EU'}
+2016-04-06 23:56:35 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Camco-40055-Brass-Pressure-Regulator/dp/B003BZD08U'}
+2016-04-06 23:56:36 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Meguiars-G17216-Ultimate-Compound-15-2/dp/B001O7PNNM'}
+2016-04-06 23:56:37 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Battery-Tender-021-0123-Junior-Charger/dp/B000CITK8S'}
+2016-04-06 23:56:37 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products> (referer: http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive)
+2016-04-06 23:56:37 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Decker-BM3B-Battery-Charger-Maintainer/dp/B0051D3MP6'}
+2016-04-06 23:56:38 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Autel-MaxiScan-MS300-Diagnostic-Vehicles/dp/B001LHVOVK'}
+2016-04-06 23:56:39 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Nilight-Light-Wiring-Harness-Switch/dp/B0155W7EDS'}
+2016-04-06 23:56:39 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Camco-57363-Leveling-Scissor-Socket/dp/B001V8U12M'}
+2016-04-06 23:56:40 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Stanley-J5C09-Starter-Built-Compressor/dp/B002X6VXL4'}
+2016-04-06 23:56:40 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Meguiars-G7164-Class-Shampoo-Conditioner/dp/B0009IQXFO'}
+2016-04-06 23:56:41 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Shell-Rotella-550019921-Synthetic-Diesel/dp/B005CHT4W6'}
+2016-04-06 23:56:42 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Phgiveu-Push-type-Bumper-Fender-Fastener/dp/B00842A7F4'}
+2016-04-06 23:56:42 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Bosch-24A-ICON-Wiper-Blade/dp/B005JU5VUK'}
+2016-04-06 23:56:43 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/ExpertPower-EXP1270-Rechargeable-Lead-Battery/dp/B003S1RQ2S'}
+2016-04-06 23:56:44 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Creaker%C2%AE-Wireless-Security-Detection-Warranty/dp/B015CCBTDC'}
+2016-04-06 23:56:44 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/J-B-Weld-8265S-Original-Reinforced/dp/B0006O1ICE'}
+2016-04-06 23:56:45 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Meguiars-X3070-Soft-Foam-Applicator/dp/B0009IQZPW'}
+2016-04-06 23:56:45 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Mobil-120760-Synthetic-Motor-0W-40/dp/B00HG76A9A'}
+2016-04-06 23:56:46 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Chemical-Guys-Chenille-Microfiber-Scratch-Free/dp/B003TTL0TE'}
+2016-04-06 23:56:47 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Colorful-decals%C2%A9-Sticker-Decal-Adhesive-Without/dp/B00XOXQ2PW'}
+2016-04-06 23:56:47 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Chemical-Guys-MIC29208-Microfiber-Applicators/dp/B00BTGSGFK'}
+2016-04-06 23:56:48 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Car-Hammer-Seatbelt-Emergency-Must-Have/dp/B00CB8WM2S'}
+2016-04-06 23:56:49 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Camco-22505-Degree-Hose-Elbow/dp/B003BZD03K'}
+2016-04-06 23:56:49 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Invisible-Glass-Premium-Cleaner-91164/dp/B0007OWD2M'}
+2016-04-06 23:56:50 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Baby-Einstein-Along-Tunes-Musical/dp/B000YDDF6O'}
+2016-04-06 23:56:50 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/TMS-LED-XT-18W30D-K-1260LM-Light-off-Road/dp/B00EA0ZB7I'}
+2016-04-06 23:56:52 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/CURT-21510-Coated-Hitch-Clip/dp/B004C6OBBC'}
+2016-04-06 23:56:52 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Zwipes-Microfiber-Cleaning-Cloths-48-Pack/dp/B00ANZHG4U'}
+2016-04-06 23:56:53 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Michelin-8516-Stealth-Windshield-Technology/dp/B00DYSDHFU'}
+ successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save s2016-04-06 23:56:53 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Babylian-Carrier-3-5~25kg-Certification-black-blue/dp/B01CHB04Q4'}
+2016-04-06 23:56:54 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Mobil-M1-110-Extended-Performance-Filter/dp/B005GYDBNS'}
+2016-04-06 23:56:55 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Walex-TOI-91799-Porta-Pak-Holding-Deodorizer/dp/B0006GF5SK'}
+2016-04-06 23:56:55 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Lisle-35260-Plastic-Fastener-Remover/dp/B0002SRCMO'}
+2016-04-06 23:56:56 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Michelin-8517-Stealth-Windshield-Technology/dp/B00DYSDHKK'}
+2016-04-06 23:56:57 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/BOGZON-Adjustable-Refrigerator-Dishwasher-Installation/dp/B01D9SPZ3G'}
+2016-04-06 23:56:57 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/KN-204-Motorcycle-Powersports-Performance-Filter/dp/B000E2CVI8'}
+2016-04-06 23:56:58 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/99-5000-Aerosol-Recharger-Filter-Service/dp/B00029WYEY'}
+2016-04-06 23:56:58 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Etekcity-Lasergrip-1080-Non-contact-Thermometer/dp/B00DMI632G'}
+2016-04-06 23:56:59 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Etekcity-MSR-R500-Digital-Multimeter-Continuity/dp/B00KHP6EIK'}
+2016-04-06 23:57:00 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/BOGZON-Adjustable-Multifunctional-Safety-Locks/dp/B01DB3Z8QI'}
+2016-04-06 23:57:00 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Holiday-Sale-All-Weather-Rubber-Floor/dp/B00GIXU00S'}
+2016-04-06 23:57:01 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/JACKLY-Professional-Screwdriver-Extension-Maintenance/dp/B005JRTAYG'}
+2016-04-06 23:57:02 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Meguiars-G18216-Ultimate-Liquid-Wax/dp/B004HCM9H4'}
+2016-04-06 23:57:02 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/303-30313-CSR-Aerospace-Protectant-Trigger/dp/B00KN0UOEE'}
+2016-04-06 23:57:03 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/BOGZON-Adjustable-Children-Safety-Locks/dp/B01D9VY520'}
+2016-04-06 23:57:04 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Budget-Good-Universal-Smartphones-Compatible/dp/B014881T2C'}
+2016-04-06 23:57:04 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Hopkins-Towing-Solutions-8525-Graduated/dp/B000AA4RWM'}
+2016-04-06 23:57:05 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/4-Strips-Replacement-E-ZPass-Mounting-Strips/dp/B002DZJQ0A'}
+2016-04-06 23:57:05 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/FloTool-11930MI-Heavy-Wheel-Chocks/dp/B000BQYH6Q'}
+2016-04-06 23:57:06 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Summer-Infant-Contoured-Changing-Pad/dp/B009EDSWJA'}
+2016-04-06 23:57:07 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/CF10285-Fresh-Breeze-Cabin-Filter/dp/B001CEG90I'}
+2016-04-06 23:57:07 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Michelin-8528-Stealth-Windshield-Technology/dp/B00DYSDSBI'}
+2016-04-06 23:57:08 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/EPAuto-CF10285-Toyota-Premium-Activated/dp/B014TYRQUY'}
+2016-04-06 23:57:09 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/LAMPHUS-CRUIZER-Light-Wiring-Harness/dp/B00D1CQVIY'}
+2016-04-06 23:57:09 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Dr-Browns-700-Bottle-Brush/dp/B000N0SNHY'}
+2016-04-06 23:57:10 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/KeylessOption-Replacement-Keyless-Control-Transmitter/dp/B00KTIUG5C'}
+2016-04-06 23:57:10 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Allen-Sports-Tension-Bicycle-Cross-Bar/dp/B000ELSSZE'}
+2016-04-06 23:57:11 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Zwipes-Microfiber-Cleaning-Cloths-12-Pack/dp/B000XEGEWG'}
+2016-04-06 23:57:12 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Bosch-26A-ICON-Wiper-Blade/dp/B005JU5W54'}
+2016-04-06 23:57:12 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Regalo-Easy-White-spaces-between/dp/B001OC5UMQ'}
+2016-04-06 23:57:13 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Improved-Eva-dry-E-333-Renewable-Dehumidifier/dp/B000H0XFCS'}
+2016-04-06 23:57:14 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Rain-X-600001-Windshield-Repair-Kit/dp/B00IPS4APU'}
+2016-04-06 23:57:14 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Camco-22853-Premium-Drinking-Water/dp/B004RNR9QY'}
+2016-04-06 23:57:15 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Anker-PowerCore-15000mAh-Flashlight-Protection/dp/B010N8YM2U'}
+2016-04-06 23:57:15 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Baby-Banana-Bendable-Training-Toothbrush/dp/B002QYW8LW'}
+2016-04-06 23:57:16 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Chemical-Guys-MIC50612-Professional-Microfiber/dp/B00A8MZ7IA'}
+2016-04-06 23:57:17 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Camco-44414-Wheel-Chock-Pack/dp/B00K1C1WC2'}
+2016-04-06 23:57:17 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/GOOACC-Retainer-Fastener-Scrambler-Sportsman/dp/B008427D88'}
+2016-04-06 23:57:18 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/3M-39008-Headlight-Restoration-System/dp/B001AIZ5HY'}
+2016-04-06 23:57:18 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Essential-Oil-Diffuser-Vafee-Aromatherapy/dp/B01AY7DYR4'}
+2016-04-06 23:57:19 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Rain-X-Glass-Treatment-Trigger-oz/dp/B000BVRZ74'}
+2016-04-06 23:57:20 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Carrand-97372AS-AutoSpa-Interior-Detail/dp/B006H34BUY'}
+2016-04-06 23:57:21 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Plews-55001-Lubrimatic-Standard-Bottles/dp/B000BQW5LK'}
+2016-04-06 23:57:22 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Camco-39761-RhinoFLEX-Swivel-Fittings/dp/B002OUMVWY'}
+2016-04-06 23:57:22 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Munchkin-Soft-Tip-Infant-Spoon-Count/dp/B000LSL5ZK'}
+2016-04-06 23:57:23 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Nilight-Spot-Work-Light-Driving/dp/B00DR67P9I'}
+2016-04-06 23:57:23 [scrapy] INFO: Crawled 28 pages (at 9 pages/min), scraped 310 items (at 92 items/min)
+2016-04-06 23:57:24 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Meguiars-G1016-Smooth-Surface-Clay/dp/B00063X7KG'}
+2016-04-06 23:57:24 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/EPAuto-CF10134-Premium-Filter-Activated/dp/B014TZAUU6'}
+2016-04-06 23:57:25 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive',
+ 'product_url': u'http://www.amazon.com/Mobil-120766-Extended-Performance-5W-30/dp/B00J00X3NW'}
+2016-04-06 23:57:26 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Medela-Pump-Save-Breast-Count/dp/B00028XJNA'}
+2016-04-06 23:57:26 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Munchkin-Hammer-Diaper-Refill-Count/dp/B009R27JJC'}
+2016-04-06 23:57:27 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Vulli-6163243-Sophie-la-Girafe/dp/B000IDSLOG'}
+2016-04-06 23:57:28 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Nuby-Bathtime-Octopus-Hoopla-Purple/dp/B008CDR7LW'}
+2016-04-06 23:57:28 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Comotomo-Bottle-Green-Ounce-Count/dp/B009QXDE32'}
+2016-04-06 23:57:29 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Munchkin-Miracle-Sippy-Green-Ounce/dp/B00MRZIGVG'}
+2016-04-06 23:57:29 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Mommys-Helper-Outlet-Plugs-Count/dp/B00081J3N6'}
+2016-04-06 23:57:30 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products)
+2016-04-06 23:57:31 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Munchkin-Xtraguard-Action-Multi-Latches/dp/B007A2ZSZ8'}
+2016-04-06 23:57:31 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products)
+2016-04-06 23:57:31 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products)
+2016-04-06 23:57:31 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products)
+2016-04-06 23:57:31 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products)
+2016-04-06 23:57:31 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products)
+2016-04-06 23:57:31 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/NoseFrida-The-Snotsucker-Nasal-Aspirator/dp/B00171WXII'}
+2016-04-06 23:57:31 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products)
+2016-04-06 23:57:32 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Medela-Harmony-Manual-Breast-Pump/dp/B0006HBS1M'}
+2016-04-06 23:57:32 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty> (referer: http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products)
+2016-04-06 23:57:32 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products)
+2016-04-06 23:57:33 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Bright-Starts-Grab-Spin-Rattle/dp/B000FMQWS2'}
+2016-04-06 23:57:33 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Regalo-Swing-Down-Bedrail-White/dp/B0070WGV9K'}
+2016-04-06 23:57:34 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Delta-Children-Pocket-Hanging-Organizer/dp/B00V0VQK1G'}
+2016-04-06 23:57:34 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Dr-Browns-Natural-Standard-Nipple/dp/B003KMWATY'}
+2016-04-06 23:57:35 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Safety-1st-Heavenly-Dreams-Mattress/dp/B004044LD4'}
+2016-04-06 23:57:36 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/myBaby-MYB-S200-SoundSpa-Portable/dp/B0091E31KM'}
+2016-04-06 23:57:36 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/The-First-Years-Spill-Proof-Straw/dp/B0054YZDWC'}
+2016-04-06 23:57:37 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Hammock-Organize-Stuffed-Handy-Laundry/dp/B00II6QO8A'}
+2016-04-06 23:57:38 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Munchkin-Snack-Catchers-Colors-Vary/dp/B000GB0NZK'}
+2016-04-06 23:57:38 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Nuby-Icybite-Hard-Soft-Teething/dp/B003N9M6YI'}
+2016-04-06 23:57:39 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/American-Baby-Company-Waterproof-Protective/dp/B00MUZVKY8'}
+2016-04-06 23:57:40 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Crest-White-Whitestrips-Professional-Effects/dp/B00336EUTK'}
+2016-04-06 23:57:40 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/NUK-Mash-Serve-Making-Homemade/dp/B006Z6E8AG'}
+2016-04-06 23:57:41 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Graco-SnugRide-Click-Connect-Infant/dp/B00BNQEZXS'}
+2016-04-06 23:57:41 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Kiinde-Breast-Storage-Twist-Pouch/dp/B00JWX0SL2'}
+2016-04-06 23:57:42 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Comotomo-Natural-Bottle-Green-Ounces/dp/B004C053AQ'}
+2016-04-06 23:57:43 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Lamaze-Peek-A-Boo-Forest-Soft-Book/dp/B0043D28B4'}
+2016-04-06 23:57:43 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Diaper-Dekor-Plus-Refill-Count/dp/B00389VFH2'}
+2016-04-06 23:57:44 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/The-First-Years-American-Magnifier/dp/B000V88HJM'}
+2016-04-06 23:57:45 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/BEST-Dead-Sea-Mud-Mask/dp/B00XTAFYKY'}
+2016-04-06 23:57:45 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Babylian-Recognition-Intelligence-Childhood-Certification/dp/B017VSBO26'}
+2016-04-06 23:57:46 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Fisher-Price-K6070-Rainforest-Jumperoo/dp/B000LXQVA4'}
+2016-04-06 23:57:46 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Pro-Tec-Extended-Humidifier-Wicking/dp/B00JR947EU'}
+2016-04-06 23:57:47 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Medela-Breastmilk-Bottle-Set-Ounce/dp/B001V9EVCM'}
+2016-04-06 23:57:48 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Q-tips-Cotton-Swabs-Club-Pack/dp/B003ZTVDBS'}
+2016-04-06 23:57:48 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Summer-Infant-Potty-White-Teal/dp/B00A0ID90A'}
+2016-04-06 23:57:49 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Graco-Pack-Play-Playard-Aspery/dp/B00LVMSU0S'}
+2016-04-06 23:57:50 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Sassy-80109-Developmental-Bumpy-Ball/dp/B004AHMCMI'}
+2016-04-06 23:57:50 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Infantino-Textured-Multi-Ball-Set/dp/B00DJPK8PA'}
+uccessful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save suc2016-04-06 23:57:51 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Gillette-Fusion-ProGlide-Manual-Refills/dp/B003983HZK'}
+2016-04-06 23:57:51 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Philips-Soothie-Pacifier-Purple-Months/dp/B0045I6IA4'}
+2016-04-06 23:57:52 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/SleepSack-Cotton-Swaddle-Cream-Small/dp/B003E6OBMA'}
+2016-04-06 23:57:53 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Gerber-Graduates-Cutlery-Neutral-3-count/dp/B008X6RGZK'}
+2016-04-06 23:57:53 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Comotomo-Bottle-Pink-Ounce-Count/dp/B009QXDE3C'}
+2016-04-06 23:57:54 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Gillette-Fusion-Manual-Razor-Refills/dp/B004B8AZH0'}
+2016-04-06 23:57:54 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Medela-Quick-Clean-Breast-Accessory/dp/B000CCXLNE'}
+2016-04-06 23:57:55 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Creaker%C2%AE-Upgraded-Wireless-Security-Surveillance/dp/B015A4V2YS'}
+2016-04-06 23:57:56 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/FridaBaby-Aspirator-Additional-Hygiene-Filters/dp/B00RP0GHBO'}
+2016-04-06 23:57:57 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Munchkin-Fresh-Feeder-Colors-Count/dp/B000GK5XY2'}
+2016-04-06 23:57:57 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Philips-Norelco-Multigroom-QG3330-Packaging/dp/B00ARF42H0'}
+2016-04-06 23:57:58 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Munchkin-Miracle-Trainer-Green-Ounce/dp/B00MRZIFD0'}
+2016-04-06 23:57:58 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Simple-Wishes-Hands-Free-Breastpump-X-Small-Large/dp/B00295MQLU'}
+2016-04-06 23:57:59 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/NUK-Fashion-Hearts-Learner-5-Ounce/dp/B00BEVSSDU'}
+2016-04-06 23:58:00 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Diaper-Genie-10078300041174-Carbon-Filters/dp/B00FZGLMCY'}
+2016-04-06 23:58:00 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/HSI-Professional-Ceramic-Tourmaline-Treatment/dp/B001MA0QY2'}
+2016-04-06 23:58:01 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Munchkin-Stay-Suction-Bowl-Count/dp/B000JOT2RO'}
+2016-04-06 23:58:02 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Skip-Hop-Bath-Spout-Cover/dp/B001WAJVZM'}
+2016-04-06 23:58:02 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Corner-Bumpers-Furniture-Protector-preapplied/dp/B00RGFIYSC'}
+2016-04-06 23:58:03 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Dreamtown-CHIROPRACTOR-RECOMMENDED-Kids-Hypoallergenic/dp/B00KWR2BCQ'}
+2016-04-06 23:58:03 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Panasonic-ER-GN30-K-Nose-Hair-Trimmer/dp/B0049LUI9O'}
+2016-04-06 23:58:04 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Infant-Optics-DXR-8-Monitor-Interchangeable/dp/B00ECHYTBI'}
+2016-04-06 23:58:05 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/WubbaNub-25581-Infant-Pacifier-Giraffe/dp/B003CK3LDI'}
+2016-04-06 23:58:05 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/ZoroPlan-Table-Corner-Guards-Piece/dp/B01D4WFXCU'}
+2016-04-06 23:58:06 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Philips-Avent-Soothie-Pacifier-Months/dp/B0045I6IAY'}
+2016-04-06 23:58:07 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Braun-Clean-Renew-Cartridge-Refills/dp/B007SNGSFS'}
+2016-04-06 23:58:07 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Dr-Browns-Natural-Newborn-Packaging/dp/B001IXYOD2'}
+2016-04-06 23:58:08 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/SySrion%C2%AE-Corner-Guards-Piece-Childproofing/dp/B01A58G3UM'}
+2016-04-06 23:58:09 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Evenflo-Big-Booster-Seat-Sprocket/dp/B00AJSIVWW'}
+2016-04-06 23:58:09 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Summer-Infant-Multi-Use-Walk-Thru-Bronze/dp/B000XT30G4'}
+2016-04-06 23:58:10 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Colgate-Total-Whitening-Toothpaste-tubes/dp/B001KYS2UA'}
+2016-04-06 23:58:10 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/The-First-Years-Comfort-Newborn/dp/B000067EH7'}
+2016-04-06 23:58:11 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Medela-Breast-Collection-Storage-Bottles/dp/B00DB5F114'}
+2016-04-06 23:58:12 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Munchkin-Five-Squirts-Bath-Toys/dp/B000GK7AMU'}
+2016-04-06 23:58:12 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/VTech-DM221-Sound-Digital-Monitor/dp/B007NG5UF4'}
+2016-04-06 23:58:13 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/ArtNaturals-Enhanced-Vitamin-Serum-Hyaluronic/dp/B012Q4M3DO'}
+2016-04-06 23:58:14 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Playtex-Liners-Nurser-Bottles-Count/dp/B000056JMU'}
+2016-04-06 23:58:14 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Leachco-Snoogle-Total-Pillow-White/dp/B0000635WI'}
+2016-04-06 23:58:15 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Fisher-Price-Rainforest-Melodies-Lights-Deluxe/dp/B000FFL58Q'}
+2016-04-06 23:58:15 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Medela-Contact-Nipple-Shield-Medium/dp/B000067PQ0'}
+2016-04-06 23:58:16 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Aztec-Secret-Indian-Healing-Cleansing/dp/B0014P8L9W'}
+2016-04-06 23:58:17 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Wall-Saver-Pressure-Gates-Pack/dp/B00RYWO8BY'}
+2016-04-06 23:58:17 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Graco-Backless-TurboBooster-Seat-Galaxy/dp/B007UYBOJU'}
+2016-04-06 23:58:18 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/green-sprouts-Stay-dry-Infant-Count/dp/B000CP2X9O'}
+2016-04-06 23:58:19 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Regalo-Easy-Open-Super-White/dp/B001OC5UNK'}
+2016-04-06 23:58:19 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/PURA-DOR-Lavender-Vanilla-Conditioner/dp/B007TC0HIC'}
+2016-04-06 23:58:20 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Replacement-Tubing-Retail-Medela-Advanced/dp/B0033B9CZ2'}
+2016-04-06 23:58:20 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Munchkin-Auto-Seat-Protector-Count/dp/B0001EM8I2'}
+2016-04-06 23:58:21 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/THERMOS-FOOGO-11-Ounce-Bottle-Purple/dp/B00318CLTQ'}
+2016-04-06 23:58:22 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Munchkin-Miracle-Sippy-Orange-Ounce/dp/B00MRZIGXY'}
+2016-04-06 23:58:22 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Floss-Action-Replacement-Electric-Toothbrush/dp/B000AUIFCA'}
+2016-04-06 23:58:22 [scrapy] INFO: Crawled 37 pages (at 9 pages/min), scraped 403 items (at 93 items/min)
+2016-04-06 23:58:23 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Philips-AventBPA-Soothie-Pacifier-months/dp/B0081ZOV06'}
+2016-04-06 23:58:23 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Comotomo-Silicone-Replacement-Nipple-Months/dp/B004C053C4'}
+2016-04-06 23:58:24 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Safety-1st-Magnetic-Locking-System/dp/B004GCJMLG'}
+2016-04-06 23:58:25 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Jumbo-Hammock-Organize-Stuffed-Animals/dp/B00F3JZY1S'}
+2016-04-06 23:58:25 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Natural-Arabica-Coffee-Organic-Coconut/dp/B0169PFLFI'}
+2016-04-06 23:58:26 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/The-First-Years-Bottle-Warmer/dp/B00005BXKM'}
+2016-04-06 23:58:27 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/OXO-Silicone-Drain-Stopper-Aqua/dp/B0038JE650'}
+2016-04-06 23:58:27 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Summer-Infant-Play-Portable-Playard/dp/B00KBGTRAC'}
+2016-04-06 23:58:28 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Medela-Quick-Clean-Micro-Steam-Count/dp/B000096QQ5'}
+2016-04-06 23:58:28 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Colgate-Extra-Clean-Toothbrush-Count/dp/B00CC6XSSQ'}
+2016-04-06 23:58:29 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Sassy-Disposable-Diaper-Sacks-Count/dp/B0007V644S'}
+2016-04-06 23:58:30 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/Evenflo-Position-andLock-Tall-Gate/dp/B0055LV3XW'}
+2016-04-06 23:58:30 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/BS-MALL-Synthetic-Cosmetics-Foundation-Blending/dp/B00KOW827M'}
+2016-04-06 23:58:31 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products',
+ 'product_url': u'http://www.amazon.com/SySrion%C2%AE-13-3ft-13ft-Corners-Guard/dp/B01A58WJBE'}
+2016-04-06 23:58:32 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Gillette-Venus-Embrace-Womens-Refills/dp/B0013MTHWQ'}
+2016-04-06 23:58:32 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Wunderbrow-Eyebrow-Make-Up-Brunette/dp/B00UYY2GSQ'}
+2016-04-06 23:58:33 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Nizoral-AntiDandruff-Shampoo-7-Ounce-Bottles/dp/B00AINMFAC'}
+2016-04-06 23:58:33 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty)
+2016-04-06 23:58:33 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty)
+2016-04-06 23:58:34 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Gillette-Fusion-Proglide-Power-Refills/dp/B003983I1S'}
+2016-04-06 23:58:34 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty)
+2016-04-06 23:58:34 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty)
+2016-04-06 23:58:34 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/best-sellers-books-Amazon/zgbs/books> (referer: http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty)
+2016-04-06 23:58:34 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty)
+2016-04-06 23:58:34 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty)
+2016-04-06 23:58:34 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0> (referer: http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty)
+2016-04-06 23:58:34 [scrapy] DEBUG: Crawled (200) <GET http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1> (referer: http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty)
+2016-04-06 23:58:35 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/HSI-PROFESSIONAL-Thermal-Protector-vitamins/dp/B00LMIVLXY'}
+2016-04-06 23:58:35 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Slant-Tweezers-TweezerGuru-Professional-Guaranteed/dp/B016LI8E4S'}
+2016-04-06 23:58:36 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Waterpik-Aquarius-Water-Flosser-WP-660/dp/B00HFQQ0VU'}
+2016-04-06 23:58:37 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/St-Ives-Timeless-Moisturizer-Collagen/dp/B000UVZU1S'}
+2016-04-06 23:58:37 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Bio-Oil-4-2oz-Multiuse-Skincare-Oil/dp/B004AI97MA'}
+2016-04-06 23:58:38 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Aussie-Aussome-Volume-Shampoo-13-5/dp/B001F51PQW'}
+2016-04-06 23:58:39 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/best-sellers-books-Amazon/zgbs/books>
+{'category_url': 'http://www.amazon.com/best-sellers-books-Amazon/zgbs/books',
+ 'product_url': u'http://www.amazon.com/The-Rainbow-Comes-Goes-Mother/dp/0062454943'}
+2016-04-06 23:58:39 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Burts-Bees-Belly-Butter-6-6-Ounce/dp/B00DM14TYC'}
+2016-04-06 23:58:40 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/CeraVe-Baby-Lotion-8-Ounce/dp/B00JF3RYPM'}
+2016-04-06 23:58:41 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Batiste-Shampoo-Original-6-73-Ounce/dp/B00TB00DK2'}
+2016-04-06 23:58:41 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Majestic-Pure-Lavender-Essential-Therapeutic/dp/B00TSTZQEY'}
+2016-04-06 23:58:42 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/BS-MALL-Synthetic-Cosmetics-Foundation-Blending/dp/B00I3VHKVK'}
+2016-04-06 23:58:42 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Dove-Antiperspirant-Deodorant-Extra-Fresh/dp/B0061JPJ28'}
+2016-04-06 23:58:43 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Crest-Whitestrips-Professional-Effects-Treatments/dp/B00AHAWWO0'}
+2016-04-06 23:58:44 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/best-sellers-books-Amazon/zgbs/books>
+{'category_url': 'http://www.amazon.com/best-sellers-books-Amazon/zgbs/books',
+ 'product_url': u'http://www.amazon.com/Harry-Potter-Cursed-Child-Parts/dp/1338099132'}
+2016-04-06 23:58:44 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Honest-Amish-Beard-Balm-Conditioner/dp/B009NNFB0O'}
+2016-04-06 23:58:45 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Majestic-Pure-Enriched-Restoration-Ingredients/dp/B012UQJNMC'}
+2016-04-06 23:58:46 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/VITAMIN-Serum-Face-Hyaluronic-Professional/dp/B00VNXQE94'}
+2016-04-06 23:58:46 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Millenium-Tanning-Bronzer-Lotion-13-5-Ounce/dp/B0058E3XJI'}
+2016-04-06 23:58:47 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/xtava-Allure-2200W-Professional-Ceramic/dp/B00SKQFT4I'}
+cessful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save successful...
+** Saving item to MySQL **
+Save succe2016-04-06 23:58:47 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Eltamd-Clear-SPF-48-Gram-1-7/dp/B002MSN3QQ'}
+2016-04-06 23:58:48 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/best-sellers-books-Amazon/zgbs/books>
+{'category_url': 'http://www.amazon.com/best-sellers-books-Amazon/zgbs/books',
+ 'product_url': u'http://www.amazon.com/One-You-A-Crossfire-Novel/dp/1250109302'}
+2016-04-06 23:58:49 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Burts-Bees-Beeswax-Ounce-Count/dp/B0054LHI5A'}
+2016-04-06 23:58:49 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/PURA-DOR-Moroccan-Argan-Organic/dp/B004Z209HS'}
+2016-04-06 23:58:50 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=3&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Naturals-Hair-Conditioner-Organic-Keratin/dp/B012P4D5XM'}
+2016-04-06 23:58:50 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=1>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Retinol-Moisturizer-Cream-Face-Moisturizing/dp/B015ORL3B8'}
+2016-04-06 23:58:51 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=2&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/CeraVe-Foaming-Facial-Cleanser-Ounce/dp/B003YMJJSK'}
+2016-04-06 23:58:52 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=4&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/stila-Waterproof-Liquid-Liner-Intense/dp/B0031NNE56'}
+2016-04-06 23:58:52 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/best-sellers-books-Amazon/zgbs/books>
+{'category_url': 'http://www.amazon.com/best-sellers-books-Amazon/zgbs/books',
+ 'product_url': u'http://www.amazon.com/First-100-Words-Roger-Priddy/dp/0312510780'}
+2016-04-06 23:58:53 [scrapy] DEBUG: Scraped from <200 http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/?_encoding=UTF8&pg=5&ajax=1&isAboveTheFold=0>
+{'category_url': 'http://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty',
+ 'product_url': u'http://www.amazon.com/Panasonic-Electric-Cordless-Conveneince-ES2207P/dp/B0018A32XS'}
+                                                                                                                                                                                                                                                                                                                                             
