@@ -66,7 +66,7 @@ class AmazonDataCollector(scrapy.Spider):
                 "//span[@id='productTitle']/text()"
             ).extract()[0].encode('utf-8')
         except:
-            print('Error in processing name')
+            print('Error in processing name', response.url)
             name = ''
         try:
             # price by amazon
@@ -82,7 +82,7 @@ class AmazonDataCollector(scrapy.Spider):
                 ).extract()[0].encode('utf-8')
                 price = float(price.replace('$', ''))
             except:
-                print('Error in processing price')
+                print('Error in processing price', response.url)
                 price = -1.0
         try:
             rank_details = response.xpath(
@@ -110,7 +110,7 @@ class AmazonDataCollector(scrapy.Spider):
                     '(', ''
                 ).strip()
             except:
-                print('Error in processing rank and category')
+                print('Error in processing rank and category', response.url)
                 rank = -1
                 category = ''
 
@@ -219,7 +219,9 @@ class AmazonDataCollector(scrapy.Spider):
             badge_count = len(badge_elements)
         except:
             print(
-                'Error in processing seller Fullfillment by Amazon badge count'
+                'Error in processing seller Fullfillment by'
+                ' Amazon badge count',
+                response.url
             )
             badge_count = 0
         try:
@@ -232,7 +234,7 @@ class AmazonDataCollector(scrapy.Spider):
             else:
                 amazon_seller = 'No'
         except:
-            print('Error in processing amazon seller')
+            print('Error in processing amazon seller', response.url)
             amazon_seller = 'N/A'
 
         item = response.meta['item']
