@@ -80,10 +80,10 @@ class AmazonDataCollector(scrapy.Spider):
                 price = response.xpath(
                     "//span[@id='priceblock_saleprice']/text()"
                 ).extract()[0].encode('utf-8')
-                price = float(price.replace('$', ''))
+                price = price.replace('$', '')
             except:
                 print('Error in processing price', response.url)
-                price = -1.0
+                price = ''
         try:
             rank_details = response.xpath(
                 "//li[@id='SalesRank']/text()"

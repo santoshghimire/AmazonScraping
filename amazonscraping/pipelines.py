@@ -54,7 +54,7 @@ class AmazonscrapingPipeline(object):
             self.cursor.execute(
                 """
                 create table IF NOT EXISTS amzn_products (name varchar(1000),
-                price float, rank integer, category varchar(500),
+                price varchar(100), rank integer, category varchar(500),
                 url varchar(1000), shipping_weight varchar(100),
                 item_model_number varchar(200), badge_count integer,
                 amazon_seller varchar(10), asin varchar(100));
