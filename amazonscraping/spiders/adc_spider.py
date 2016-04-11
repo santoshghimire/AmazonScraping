@@ -60,10 +60,9 @@ class AmazonDataCollector(scrapy.Spider):
         yield request
 
     def parse(self, response):
-        # yield Request(url=response.url, dont_filter=True)
-        if not response.xpath("//span[@class='nav-logo-base nav-sprite']"):
-            print('Not amazon')
-            yield Request(url=response.url, dont_filter=True)
+        # if not response.xpath("//span[@class='nav-logo-base nav-sprite']"):
+        #     print('Not amazon')
+        #     yield Request(url=response.url, dont_filter=True)
         item = AmazonProduct()
         try:
             name = response.xpath(

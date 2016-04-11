@@ -24,7 +24,7 @@ NEWSPIDER_MODULE = 'amazonscraping.spiders'
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 1
+DOWNLOAD_DELAY = 5
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN=16
 #CONCURRENT_REQUESTS_PER_IP=16
@@ -55,7 +55,7 @@ DOWNLOADER_MIDDLEWARES = {
 
     'scrapy.contrib.downloadermiddleware.retry.RetryMiddleware': 90,
     # Fix path to this module
-    'amazonscraping.proxy_middleware.RandomProxy': 100,
+    # 'amazonscraping.proxy_middleware.RandomProxy': 100,
     'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 110,
 }
 
@@ -96,4 +96,4 @@ ITEM_PIPELINES = {
 RETRY_TIMES = 10
 # Retry on most error codes since proxies fail for different reasons
 RETRY_HTTP_CODES = [500, 503, 504, 400, 403, 404, 408]
-PROXY_LIST='amazonscraping/proxy_list.txt'
+# PROXY_LIST='amazonscraping/proxy_list.txt'
