@@ -50,8 +50,13 @@ NEWSPIDER_MODULE = 'amazonscraping.spiders'
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware': None,
-    'amazonscraping.mymiddleware.RandomUserAgentMiddleware': 400,
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+    'amazonscraping.useragent_middleware.RandomUserAgentMiddleware': 400,
+
+    'scrapy.contrib.downloadermiddleware.retry.RetryMiddleware': 90,
+    # Fix path to this module
+    'amazonscraping.proxy_middleware.RandomProxy': 100,
+    'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 110,
 }
 
 # Enable or disable extensions
@@ -86,3 +91,9 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR='httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES=[]
 #HTTPCACHE_STORAGE='scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+# Retry many times since proxies often fail
+RETRY_TIMES = 10
+# Retry on most error codes since proxies fail for different reasons
+RETRY_HTTP_CODES = [500, 503, 504, 400, 403, 404, 408]
+PROXY_LIST='amazonscraping/proxy_list.txt'
