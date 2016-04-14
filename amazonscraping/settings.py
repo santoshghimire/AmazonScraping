@@ -52,8 +52,6 @@ CONCURRENT_REQUESTS_PER_DOMAIN=3
 DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
     'amazonscraping.useragent_middleware.RandomUserAgentMiddleware': 400,
-
-    'scrapy.contrib.downloadermiddleware.retry.RetryMiddleware': 90,
     # Fix path to this module
     # 'amazonscraping.proxy_middleware.RandomProxy': 100,
     'scrapy.downloadermiddlewares.retry.RetryMiddleware': 110,
