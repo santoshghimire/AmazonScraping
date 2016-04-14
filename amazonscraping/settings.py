@@ -24,9 +24,9 @@ NEWSPIDER_MODULE = 'amazonscraping.spiders'
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 5
+DOWNLOAD_DELAY = 3
 # The download delay setting will honor only one of:
-#CONCURRENT_REQUESTS_PER_DOMAIN=16
+CONCURRENT_REQUESTS_PER_DOMAIN=3
 #CONCURRENT_REQUESTS_PER_IP=16
 
 # Disable cookies (enabled by default)
@@ -56,7 +56,11 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy.contrib.downloadermiddleware.retry.RetryMiddleware': 90,
     # Fix path to this module
     # 'amazonscraping.proxy_middleware.RandomProxy': 100,
-    'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 110,
+    'scrapy.downloadermiddlewares.retry.RetryMiddleware': 110,
+
+    'amazonscraping.useragent_middleware.ProxyMiddleware': 410,
+    # Disable compression middleware, so the actual HTML pages are cached
+
 }
 
 # Enable or disable extensions
@@ -76,14 +80,15 @@ ITEM_PIPELINES = {
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
 # NOTE: AutoThrottle will honour the standard settings for concurrency and delay
-#AUTOTHROTTLE_ENABLED=True
+AUTOTHROTTLE_ENABLED=True
 # The initial download delay
 #AUTOTHROTTLE_START_DELAY=5
 # The maximum download delay to be set in case of high latencies
 #AUTOTHROTTLE_MAX_DELAY=60
 # Enable showing throttling stats for every response received:
-#AUTOTHROTTLE_DEBUG=False
+AUTOTHROTTLE_DEBUG=True
 
+RANDOMIZE_DOWNLOAD_DELAY=True
 # Enable and configure HTTP caching (disabled by default)
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
 #HTTPCACHE_ENABLED=True

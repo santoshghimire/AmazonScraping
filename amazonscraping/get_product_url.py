@@ -41,7 +41,7 @@ class GetProductURL:
 
     def next_url(self):
         """
-        Generate a list of URLs to crawl by querying mysql database
+        Return url to crawl by querying mysql database
         """
         next_url = self.cursor.fetchone()
         yield next_url[0]

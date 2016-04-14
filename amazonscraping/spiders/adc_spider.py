@@ -1,7 +1,7 @@
 import scrapy
 import urlparse
 from scrapy.http import Request
-# from scrapy.xlib.pydispatch import dispatcher
+from scrapy.xlib.pydispatch import dispatcher
 
 
 from amazonscraping.items import AmazonProduct
@@ -34,6 +34,7 @@ class AmazonDataCollector(scrapy.Spider):
 
     def __init__(self, *args, **kwargs):
         super(AmazonDataCollector, self).__init__(*args, **kwargs)
+        dispatcher.connect(self.quit, scrapy.signals.spider_closed)
         if kwargs.get('url'):
             self.start_urls = [kwargs.get('url')]
             self.args = True
@@ -58,6 +59,14 @@ class AmazonDataCollector(scrapy.Spider):
 
         # important to yield, not return
         yield request
+
+    def quit(self, spider):
+        # second param is instance of spider about to be closed.
+        try:
+            self.url.db.close()
+            print('Spider closed, fetching product urls stopped')
+        except:
+            pass
 
     def parse(self, response):
         # if not response.xpath("//span[@class='nav-logo-base nav-sprite']"):
