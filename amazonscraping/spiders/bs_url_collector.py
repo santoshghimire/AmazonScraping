@@ -7,7 +7,7 @@ from amazonscraping.pipelines import BestSellerCategoryPipeline
 
 class BestSellerCategoryURLCollector(scrapy.Spider):
     """
-    This is the spider that crawls the given start_urls.
+    This is the spider that crawls the bestseller category urls.
     """
     name = "bestseller"
     allowed_domains = ["amazon.com"]

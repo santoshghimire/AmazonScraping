@@ -8,7 +8,8 @@ from amazonscraping.pipelines import BestSellerPipeline
 
 class URLCollector(scrapy.Spider):
     """
-    This is the spider that crawls the given start_urls.
+    This is the spider that crawls the product urls for each
+    bestseller categories.
     """
     name = "url_collector"
     allowed_domains = ["amazon.com"]

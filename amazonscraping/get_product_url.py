@@ -12,6 +12,7 @@ class GetProductURL:
     }
     db = None
     cursor = None
+    update_cursor = None
 
     def connect(self):
         print('Connecting MySQLdb...')
@@ -30,11 +31,12 @@ class GetProductURL:
 
         # prepare a cursor object using cursor() method
         self.cursor = self.db.cursor()
+        self.update_cursor = self.db.cursor()
         print("Connection successful...")
         print("Fetching bestseller product urls...")
         self.cursor.execute(
             """
-            SELECT product_url FROM bestseller_urls;
+            SELECT product_url FROM bestseller_urls WHERE scraped='no';
             """
         )
         print("ok")
@@ -44,4 +46,13 @@ class GetProductURL:
         Return url to crawl by querying mysql database
         """
         next_url = self.cursor.fetchone()
+        self.update_cursor.execute(
+            """
+            UPDATE bestseller_urls SET scraped=%s WHERE
+            product_url=%s
+            """,
+            ('yes', next_url[0])
+        )
+        # Commit your changes in the database
+        self.db.commit()
         yield next_url[0]

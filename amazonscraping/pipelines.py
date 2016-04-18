@@ -151,7 +151,8 @@ class BestSellerCategoryPipeline(object):
                 (
                     name varchar(200),
                     url varchar(500), parent_category varchar(200),
-                    main_category varchar(200)
+                    main_category varchar(200),
+                    scraped varchar(10) default 'no'
                 );
                 """
             )
@@ -243,7 +244,8 @@ class BestSellerPipeline(object):
                 create table IF NOT EXISTS bestseller_urls
                 (
                     product_url varchar(500),
-                    category_url varchar(500)
+                    category_url varchar(500),
+                    scraped varchar(10) default 'no'
                 );
                 """
             )
