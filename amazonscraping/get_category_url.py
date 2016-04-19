@@ -12,7 +12,7 @@ class GetBestSellerCategoryURL:
     }
     db = None
     cursor = None
-    update_cursor = None
+    # update_cursor = None
 
     def connect(self):
         print('Connecting MySQLdb...')
@@ -31,12 +31,13 @@ class GetBestSellerCategoryURL:
 
         # prepare a cursor object using cursor() method
         self.cursor = self.db.cursor()
-        self.update_cursor = self.db.cursor()
+        # self.update_cursor = self.db.cursor()
         print("Connection successful...")
         print("Fetching bestseller categories urls...")
+        # SELECT URL FROM bestseller_categories WHERE scraped='no';
         self.cursor.execute(
             """
-            SELECT URL FROM bestseller_categories WHERE scraped='no';
+            SELECT URL FROM bestseller_categories;
             """
         )
         print("ok")
@@ -46,13 +47,13 @@ class GetBestSellerCategoryURL:
         Generate a list of URLs to crawl by querying mysql database
         """
         next_url = self.cursor.fetchone()
-        self.update_cursor.execute(
-            """
-            UPDATE bestseller_categories SET scraped=%s WHERE
-            url=%s
-            """,
-            ('yes', next_url[0])
-        )
-        # Commit your changes in the database
-        self.db.commit()
+        # self.update_cursor.execute(
+        #     """
+        #     UPDATE bestseller_categories SET scraped=%s WHERE
+        #     url=%s
+        #     """,
+        #     ('yes', next_url[0])
+        # )
+        # # Commit your changes in the database
+        # self.db.commit()
         yield next_url[0]
