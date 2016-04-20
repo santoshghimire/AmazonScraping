@@ -37,7 +37,7 @@ class GetBestSellerCategoryURL:
         # SELECT URL FROM bestseller_categories;
         self.cursor.execute(
             """
-            # SELECT URL FROM bestseller_categories WHERE scraped='no';
+            SELECT URL FROM bestseller_categories WHERE scraped='no';
             """
         )
         print("ok")
