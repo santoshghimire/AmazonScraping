@@ -36,7 +36,7 @@ class GetProductURL:
         print("Fetching bestseller product urls...")
         self.cursor.execute(
             """
-            SELECT product_url FROM bestseller_urls WHERE scraped='no';
+            SELECT product_url FROM product_urls WHERE scraped='no';
             """
         )
         print("ok")
@@ -48,7 +48,7 @@ class GetProductURL:
         next_url = self.cursor.fetchone()
         self.update_cursor.execute(
             """
-            UPDATE bestseller_urls SET scraped=%s WHERE
+            UPDATE product_urls SET scraped=%s WHERE
             product_url=%s
             """,
             ('yes', next_url[0])

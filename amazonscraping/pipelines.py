@@ -241,7 +241,7 @@ class BestSellerPipeline(object):
             self.cursor.execute("SET sql_notes = 0; ")
             self.cursor.execute(
                 """
-                create table IF NOT EXISTS bestseller_urls
+                create table IF NOT EXISTS product_urls
                 (
                     product_url varchar(500),
                     category_url varchar(500),
@@ -271,7 +271,7 @@ class BestSellerPipeline(object):
             print('** Saving item to MySQL **')
             self.cursor.execute(
                 """
-                insert into bestseller_urls (
+                insert into product_urls (
                     product_url, category_url
                 ) values(
                     %s, %s
